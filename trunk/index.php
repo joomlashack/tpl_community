@@ -4,10 +4,10 @@
  */
 // no direct access
 defined('_JEXEC') or die('Restricted access');
-?>
-<?php
 define( 'YOURBASEPATH', dirname(__FILE__) );
-#require(YOURBASEPATH .DS."/styleswitcher.php"); #demo only
+
+$app = JFactory::getApplication();
+
 $sidecolumnwidth	= $this->params->get("sidecolumnwidth");
 $leftcolgrid		= "3";
 $rightcolgrid		= "3";
@@ -22,12 +22,10 @@ $style				= $this->params->get("style");
 $HeaderScr 			= $this->params->get("headerscript","");
 $FooterScr 			= $this->params->get("footerscript","");
 $layoutstyle 		= $this->params->get("layoutstyle"); 
-#$layoutstyle	=JRequest::getVar('layoutstyle', $this->params->get("layoutstyle")); #demo only
 $mootools_enabled   = ($this->params->get("mootools_enabled", 1)  == 0)?"false":"true";
 $caption_enabled    = ($this->params->get("caption_enabled", 1)  == 0)?"false":"true";
 require( YOURBASEPATH.DS."grid.php");
 require( YOURBASEPATH.DS."/js/template.css.php");
-#require( YOURBASEPATH.DS."/themesaver.php"); #demo only
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" >
@@ -37,18 +35,14 @@ require( YOURBASEPATH.DS."/js/template.css.php");
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/layout.css" type="text/css" />
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/template<?php echo $style;?>.css" type="text/css" /> <!-- $scheme in this variable is for demo only - live version should be $style -->
 <!--[if lte IE 6]>
-	<link rel="stylesheet" type="text/css" href="<?php echo $this->
-baseurl ?>/templates/<?php echo $this->template ?>/css/ie6.css" media="screen" />
-	<script type="text/javascript" src="<?php echo $this->
-	baseurl ?>/templates/<?php echo $this->template ?>/js/pngfix.js"></script>
-	<script type="text/javascript" src="<?php echo $this->
-	baseurl ?>/templates/<?php echo $this->template ?>/js/ie6.js"></script>
+	<link rel="stylesheet" type="text/css" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/ie6.css" media="screen" />
+	<script type="text/javascript" src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/pngfix.js"></script>
+	<script type="text/javascript" src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/ie6.js"></script>
 <script>
   POS_BrowserPNG.fix('img.trans,#logo-graphic h1 a,.trans,a.forgotpass,a.forgotuser,a.regusr,ul.checklist li,.designer a,.arrow,.readon,.submitBtn');
 </script>
 <![endif]-->
-<!--[if IE]><link rel="stylesheet" type="text/css" href="<?php echo $this->
-baseurl ?>/templates/<?php echo $this->template ?>/css/ie.css" media="screen" />
+<!--[if IE]><link rel="stylesheet" type="text/css" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/ie.css" media="screen" />
 <![endif]-->
 <style type="text/css" media="screen">
 #logo-graphic h1 a{
@@ -56,19 +50,19 @@ width:<?php echo ((80*$logogridsize)-20);?>px;
 line-height:<?php echo $logoheight;?>px;
 height:<?php echo $logoheight;?>px;}
 </style>
-<?php echo	$HeaderScr; ?>
+<?php echo $HeaderScr; ?>
 </head>
 <body id="<?php echo $style; ?>">
 
-	<?php if($this->countModules('logo') || $this->countModules('newsflash')) : ?>
-		<div id="headerWrapper" style="height:<?php echo $logoheight;?>px;">
+	
+	<div id="headerWrapper" style="height:<?php echo $logoheight;?>px;">
 		<div id="header" class="container_12 clearfix">
 			<div class="grid_<?php echo $logogridsize;?> alpha">
 				<div class="inside clearfix">
 				<!--Sets a grid the size of chosen parameter-->
 				<?php if ($headerstyle != "module") :?>
 					<div id="logo-<?php echo $headerstyle;?>">
-						<h1><a href="<?php echo JURI::base(); ?>" title="<?php echo $mainframe->getCfg('sitename'); ?>"><?php echo $headline;?></a></h1>
+						<h1><a href="<?php echo JURI::base(); ?>" title="<?php echo $app->getCfg('sitename'); ?>"><?php echo $headline;?></a></h1>
 						<h2><?php echo $slogan;?></h2>
 					</div>
 					<?php else: ?>
@@ -84,7 +78,6 @@ height:<?php echo $logoheight;?>px;}
 			<?php endif; ?>
 		</div><!-- #header -->
 	</div><!-- #headerWrapper -->	
-	<?php endif; ?>
 
 	<?php if($this->countModules('menu')) : ?>
 	<div id="menuWrapper">
@@ -153,6 +146,6 @@ height:<?php echo $logoheight;?>px;}
 	</div>
 
 	<jdoc:include type="modules" name="debug" />
-	<?php echo	$FooterScr; ?>
+	<?php echo $FooterScr; ?>
 	</body>
 	</html>
