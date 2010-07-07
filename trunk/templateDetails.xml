@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.5/template-install.dtd">
+<install version="1.5" type="template"  method="upgrade">
+	<name>js_community</name>
+	<creationDate>Nov 2009</creationDate>
+	<author>Barrie North</author>
+	<authorEmail>support@joomlashack.com</authorEmail>
+	<authorUrl>http://www.joomlashack.com</authorUrl>
+	<copyright>Copyright Joomlashck 2009. All rights reserved</copyright>
+	<license>Commercial license - single domain use only</license>
+	<version>1.0.11</version>
+    <description>
+			<![CDATA[
+			<h2>JS Community</h2>
+<img src="../templates/js_community/template_thumbnail.png" style="border:2px solid #ccc; padding: 2px; float: left; margin-bottom: 10px;" /><div class="clr"></div><p>JS Community is a <strong><a href="http://www.joomlashack.com/recommended/50-external/4-jomsocial">Jomsocial Ready</a></strong> Joomla template with lots of white space, bold fonts and raw SEO power.</p><p>With a powerful CSS grid framework, flexible layouts and modules and a big bag of SEO tricks, JS Community makes a perfect template for communities like churches and clubs to get to grips with <a href="http://www.joomlashack.com/recommended/50-external/4-jomsocial">Jomsocial</a> and launching themselves into the web.</p><p>Important Links </p><ul><li><a href="http://www.joomlashack.com/recommended/50-external/4-jomsocial">Jomsocial</a></li><li><a href="http://www.joomlashack.com/support">Joomlashack Support</a></li><li><a href="http://www.joomlashack.com/community/index.php/board,1888.0.html">Joomlashack Community Forum for free customization help</a></li><li><a href="http://demotemplates.joomlashack.com/community">Template help and set-up guide</a></li></ul><p>Thanks for purchasing a Joomlashack template!</p>
+			<h3>Changelog</h3>
+			<b>1.0.11</b><br />
+			<ul>
+			<li>Replaced missing images some gremlin removed when nobody was looking.</li>
+			</ul>
+			]]> 	
+    </description>
+	<files>
+		<filename>index.php</filename>
+		<filename>index.html</filename>
+		<filename>grid.php</filename>
+		<filename>params.ini</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_thumbnail.png</filename>
+		<folder>css/</folder>
+		<folder>html/</folder>
+		<folder>js/</folder>
+		<folder>images/</folder>
+</files>
+	<positions>
+		<position>menu</position>
+		<position>logo</position>
+		<position>newsflash</position>
+		<position>left</position>
+		<position>right</position>
+		<position>user1</position>
+		<position>user2</position>
+		<position>user3</position>
+		<position>user4</position>
+		<position>copyright</position>
+		<position>debug</position>
+		<position>breadcrumb</position>
+	</positions>
+	<params>
+		<param name="headerstyle" type="list" default="text" label="Logo type" description="Display the logo as an image or text">
+			<option value="module">Use a module</option>
+			<option value="graphic">Use an Image</option>
+			<option value="text">Use Text (Headline and Slogan)</option>
+		</param>
+		<param name="headline" type="text" default="Wireframe Joomla Template" size="50" label="Logo text" description="Header text to be displayed or SEO text for image" />
+		<param name="slogan" type="text" default="Your Site Slogan" size="50" label="Slogan" description="Slogan text to be displayed or SEO text for image" />
+		<param name="logogridsize" type="list" default="3" label="Logo grid size" description="Size of the logo box (in grid units) if using text or graphic logo">
+			<option value="1">1 (60px)</option>
+			<option value="2">2 (140px)</option>
+			<option value="3">3 (220px)</option>
+			<option value="4">4 (300px)</option>
+			<option value="5">5 (380px)</option>
+			<option value="6">6 (460px)</option>
+			<option value="7">7 (540px)</option>
+			<option value="8">8 (620px)</option>
+			<option value="9">9 (700px)</option>
+			<option value="10">10 (780px)</option>
+			<option value="11">11 (860px)</option>
+			<option value="12">12 (940px)</option>		
+		</param>
+		<param name="logoheight" type="text" default="150" label="Logo Height" description="Enter your logo image height (ONLY enter numerical value)" size="3" />		
+		<param name="sidecolumnwidth" type="list" default="4" label="Side Column Widths" description="Sets the width of the side columns">
+			<option value="1">100px</option>
+			<option value="2">140px</option>
+			<option value="3">220px</option>
+			<option value="4">300px</option>
+		</param>
+		<param name="style" type="list" default="style1" label="Color Style" description="Select your color style">
+			<option value="style1">Blue</option>
+			<option value="style2">Brown</option>
+			<option value="style3">Green</option>
+			<option value="style4">Red</option>	
+		</param>
+		<param name="layoutstyle" type="list" default="lmr" label="Column Layout" description="Allows for different layouts of columns, the middle column will ALWAYS appear first in the source code for SEO!">
+			<option value="lmr">left, middle, right</option>
+			<option value="lrm">left, right, middle</option>
+			<option value="mlr">middle left, right</option>
+		</param>
+		<param name="headerscript" type="textarea" default="" label="Header Script" description="If you need to add scripts to your header (like Google verification code, perhaps), you should enter them here." rows="5" cols="50" />
+		<param name="footerscript" type="textarea" default="" label="Footer Script" description="If you need to add scripts to your footer (like Google Analytics tracking code), you should enter them here." rows="5" cols="50" />
+		<param name="mootools_enabled" type="radio" default="1" label="Enable Mootools" description="Turn off Joomla core Mootools.js">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param name="caption_enabled" type="radio" default="1" label="Enable caption.js" description="Turn off Joomla core caption.js">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+	</params>
+</install>
