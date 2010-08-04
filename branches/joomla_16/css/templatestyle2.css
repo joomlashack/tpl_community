@@ -1,0 +1,277 @@
+/*@override http://localhost/community_new/templates/js_community/css/templatestyle2.css*/
+BODY
+{
+	background-color: #392E2E;
+}
+/*TYPOGRAPHY AND MISC*/
+A
+{
+	color: #696060;
+}
+H1, H2, H4, H6
+{
+	color: #696060;
+}
+.submitBtn input
+{
+	border-style: solid;
+	border-color: #685E5E;
+	background-color: #392E2E;
+	color: #FFF;
+	font-size: 1.3em;
+}
+/*--HEADER--*/
+#headerWrapper
+{
+	background: url(../images/style2/header_gradient_wht.png) repeat-x bottom;
+}
+#logo-text H1 A
+{
+	text-decoration: none;
+	font-size: 2em;
+	color: #7B858E;
+}
+#logo-text H2
+{
+	color: #333;
+}
+/*--MAIN MENU--*/
+#menu UL LI A
+{
+	border-right: 1px solid #78838B;
+	color: #000;
+	text-shadow: none;
+}
+#menu UL LI.active, #menu UL LI.current, #menu UL LI A:hover
+{
+	background-color: #CCDDE2;
+}
+#menuWrapper
+{
+	background: url(../images/style2/header_gradient.png) repeat-x 0 -144px;
+}
+#menu UL LI UL
+{
+	border-right: 1px solid #CCDDE2;
+	border-top: 1px solid #CCDDE2;
+	border-bottom: 1px solid #CCDDE2;
+	border-left: 1px solid #CCDDE2;
+	background: #78838B;
+}
+#menu UL UL A, #menu UL LI#current UL A
+{
+	color: #FFF;
+	border-bottom: 1px solid #CCDDE2;
+}
+#menu UL UL LI A:hover, #menu UL LI#current UL LI A:hover
+{
+	background: #CCDDE2;
+	color: #000;
+}
+/*--BANNER--*/
+#banner_wrapper, #footerWrapper
+{
+	background: #3A2E2E url(../images/style2/header_gradient.png) repeat-x 0 -183px;
+}
+#banner, #footer
+{
+	background-color: #271F1F;
+}
+#banner .module, #footer .module
+{
+	background-color: #332929;
+}
+/*--MAIN AREA--
+MODULES*/
+.left .moduletable H3, .right .moduletable H3
+{
+	color: #696060;
+	font-weight: normal;
+	font-style: normal;
+}
+.left .moduletable UL LI A, .right .moduletable UL LI A
+{
+	color: #696060;
+}
+#banner .module .side, #footer .module .side
+{
+	background: url(../images/style2/round_circle_dark.png) no-repeat;
+}
+#banner .module H3, #footer .module H3
+{
+	border-top: 1px solid #5A5353;
+	border-right: 1px solid #5A5353;
+	border-left: 1px solid #5A5353;
+}
+#banner .module .module_body, #footer .module .module_body
+{
+	border-right: 1px solid #5A5353;
+	border-left: 1px solid #5A5353;
+	border-bottom: 1px solid #5A5353;
+}
+#banner .module_body.notitle, #footer .module_body.notitle
+{
+	border-top: 1px solid #5A5353;
+}
+#main_breadcrumb
+{
+	background: url(../images/style2/home_icon.png) no-repeat 10px center;
+}
+/*--FOOTER--*/
+#banner A, #footer A
+{
+	color: #CCC;
+}
+/*--JOMSOCIAL STYLING--*/
+#community-wrap .cToolbar
+{
+	background: #7C8891;
+	border-bottom: 10px solid #CCDDE2;
+	padding: 0 !important;
+	position: relative;
+}
+INPUT#file-upload.inputbox.button
+{
+	background: none;
+}
+#community-wrap .cSubmenu A
+{
+	color: #CCDDE2;
+}
+#community-wrap .cToolbar UL
+{
+	padding: 12px 10px 0;
+}
+#community-wrap .cToolbar UL LI A, #community-wrap .cToolbar UL LI
+{
+	background: #444;
+}
+#communitylogout A
+{
+	color: #FFF !important;
+}
+#community-wrap .cToolbar UL LI.toolbar-active, LI.toolbar-active A
+{
+	background: #CCDDE2 !important;
+	color: #333 !important;
+	text-shadow: none !important;
+}
+#writeMessageForm TABLE TBODY TR TD DIV.receiverList INPUT.button
+{
+	background: none;
+	color: #444;
+	text-shadow: none;
+}
+LI.toolbar-active DIV A
+{
+	border-bottom: 1px solid #CCDDE2 !important;
+}
+#labelstatustext
+{
+	background: #444 none !important;
+}
+#main_area_wrapper #community-wrap
+{
+	font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+}
+#main_area_wrapper #community-wrap A#joinButton, #cWindow #cWindowContent A#joinButton2
+{
+	border: 5px solid #697D85;
+	background: #CCDDE2 none;
+	color: #FFF;
+	margin-top: 20px;
+	text-indent: 0;
+	text-decoration: none;
+	height: auto;
+}
+FORM#form-login A
+{
+	font-size: 11px;
+}
+#main_area_wrapper #community-wrap .app-box-header
+{
+	background: #697D85;
+}
+#main_area_wrapper #community-wrap .app-box-header H2
+{
+	color: #FFF;
+	text-shadow: none;
+}
+#main_area_wrapper #community-wrap H3, #community-wrap DIV.appsBoxTitle
+{
+	color: #444;
+}
+#community-wrap .app-box-menu-title
+{
+	text-indent: 0;
+}
+#community-wrap .app-box-menu-icon
+{
+	background: none;
+	height: auto;
+	width: auto;
+	display: inline;
+	line-height: 24px;
+	color: #FFF;
+	text-decoration: none;
+}
+/*Kunena Styling*/
+#Kunena #Kunena_top TD
+{
+	border: none !important;
+}
+#Kunena_tab UL LI, #Kunena_tab UL LI SPAN
+{
+	background: none !important;
+}
+#Kunena_tab UL LI.Kunena_item_active A
+{
+	background: #5A5353 !important;
+}
+#Kunena_tab UL LI A:hover
+{
+	background: #333 !important;
+}
+#Kunena A
+{
+	color: #696060 !important;
+}
+#Kunena TABLE.fb_header
+{
+	background-color: #CCC;
+	margin: 0;
+}
+#fb_latestx_tbody TR.fb_sth.fbs, TH.view-th.fb_sectiontableheader, #fb_fbusersummary_tbody TR.fb_sth.fbs TH, #fb_fbuserprofile_tbody TR.fb_sth.fbs, #fb_forumprofile_sub TBODY.fb_myprofile_general TR.fb_sth TH, #fb_fbuserprofile_tbody TR.fb_sth, TR.fb_sth.fbs, TR.fb_sth
+{
+	background: #2F2525 !important;
+	color: #FFF !important;
+}
+#fb_latestx_tbody TR.fb_sth.fbs A, TH.view-th.fb_sectiontableheader A, #fb_latestx THEAD TR TH A, #fb_views THEAD TR TH A, #fb_announcement THEAD TR TH A, #fb_latestx .fb_title_cover A, A#jrftsw.forumtools, #Kunena A.fb_title.fbl
+{
+	color: #FFF !important;
+}
+#fb_views THEAD TR TH, #fb_flattable THEAD TR TH
+{
+	padding: 10px !important;
+}
+#fb_latestx THEAD TR TH, #fb_views THEAD TR TH, #fb_userinfo THEAD TR TH, #fb_forumprofile_sub THEAD TR TH, #fb_userprfmsg THEAD TR TH, #fb_postmessage THEAD TR TH, #fb_forumprofile THEAD TR TH, #fb_forumua THEAD TR TH, #fb_forumua_gal THEAD TR TH, #fb_forumprofile_fav THEAD TR TH, #fb_announcement THEAD TR TH, #fb_cat1 THEAD TR TH, #fb_recentposts THEAD TR TH, #fb_frontstats THEAD TR TH, #fb_whoisonline THEAD TR TH, #fb_forumrules THEAD TR TH, #fb_forumfaq THEAD TR TH, #fb_flattable THEAD TR TH, #fb_forumsearch THEAD TR TH
+{
+	background: #5A5353 !important;
+}
+#fb_bottomarea THEAD TR TH.th-left.fbs, #fb_bottomarea THEAD TR TH.th-left
+{
+	background: #999 !important;
+	padding: 10px !important;
+}
+TH.th-1.fb_sectiontableheader
+{
+	text-align: center;
+}
+#fb_bottomarea THEAD TR TH.th-right
+{
+	background: #EEE !important;
+}
+TH.fb_header_th_3
+{
+	line-height: 10px;
+}
