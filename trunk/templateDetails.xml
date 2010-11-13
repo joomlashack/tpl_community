@@ -8,15 +8,15 @@
 	<authorUrl>http://www.joomlashack.com</authorUrl>
 	<copyright>Copyright Joomlashack 2010. All rights reserved</copyright>
 	<license>Commercial license - single domain use only</license>
-	<version>1.1</version>
+	<version>1.0.12</version>
     <description>
 			<![CDATA[
 			<h2>JS Community</h2>
 <img src="../templates/js_community/template_thumbnail.png" style="border:2px solid #ccc; padding: 2px; float: left; margin-bottom: 10px;" /><div class="clr"></div><p>JS Community is a <strong><a href="http://www.joomlashack.com/recommended/50-external/4-jomsocial">Jomsocial Ready</a></strong> Joomla template with lots of white space, bold fonts and raw SEO power.</p><p>With a powerful CSS grid framework, flexible layouts and modules and a big bag of SEO tricks, JS Community makes a perfect template for communities like churches and clubs to get to grips with <a href="http://www.joomlashack.com/recommended/50-external/4-jomsocial">Jomsocial</a> and launching themselves into the web.</p><p>Important Links </p><ul><li><a href="http://www.joomlashack.com/recommended/50-external/4-jomsocial">Jomsocial</a></li><li><a href="http://www.joomlashack.com/support">Joomlashack Support</a></li><li><a href="http://www.joomlashack.com/community/index.php/board,1888.0.html">Joomlashack Community Forum for free customization help</a></li><li><a href="http://demotemplates.joomlashack.com/community">Template help and set-up guide</a></li></ul><p>Thanks for purchasing a Joomlashack template!</p>
 			<h3>Changelog</h3>
-			<b>1.0.11</b><br />
+			<b>1.0.12</b><br />
 			<ul>
-			<li>Replaced missing images some gremlin removed when nobody was looking.</li>
+			<li>Updated styles for latest version of JomSocial</li>
 			</ul>
 			]]> 	
     </description>
