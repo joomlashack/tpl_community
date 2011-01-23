@@ -1,0 +1,120 @@
+ul#sdt_menu{
+	margin:0;
+	padding:0;
+	list-style: none;
+	font-family: inherit;
+	font-size:14px;
+	width:1020px;
+}
+ul#sdt_menu a, ul#sdt_menu span {
+	text-decoration:none;
+	outline:none;
+	padding: 0;
+	position: relative;
+	zoom: 1;
+}
+ul#sdt_menu li{
+	float: left;
+	width: 170px;
+	height: 55px;
+	position:relative;
+	cursor:pointer;
+	zoom: 1;	
+}
+ul#sdt_menu li > a, ul#sdt_menu li > span{
+	position: relative;
+	top:0px;
+	left:0px;
+	width:170px;
+	height:39px;
+	z-index:12;
+	background: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	zoom: 1;
+}
+ul#sdt_menu li.even > a{
+	background:transparent url(overlay.png) no-repeat bottom right;
+}
+ul#sdt_menu li a img{
+	border:none;
+	position:absolute;
+	width:0px;
+	height:0px;
+	bottom:0px;
+	left:85px;
+	z-index:100;
+	zoom: 1;
+}
+ul#sdt_menu li span.sdt_wrap{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:170px;
+	height:55px;
+	z-index:15;
+	zoom: 1;
+}
+ul#sdt_menu li span.sdt_active{
+	position:absolute;
+	background:#111;
+	top:55px;
+	width:170px;
+	height:0px;
+	left:0px;
+	z-index:14;
+	zoom: 1;
+}
+ul#sdt_menu li span span.sdt_link,
+ul#sdt_menu li span span.sdt_descr,
+ul#sdt_menu li div.sdt_box a,
+ul#sdt_menu li div.sdt_box span{
+	margin-left:15px;
+	text-shadow:1px 1px 1px #000;
+}
+ul#sdt_menu li span span.sdt_link{
+	color:#eee;
+	font-size:20px;
+	float:left;
+	clear:both;
+}
+ul#sdt_menu li span span.sdt_descr{
+	color:#ccc;
+	float:left;
+	clear:both;
+	width: 155px; 
+	font-size:11px;
+	letter-spacing: 0px;
+	font-weight: normal;
+	padding-left: 5px;
+	font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+}
+ul#sdt_menu li div.sdt_box{
+	display:block;
+	position:absolute;
+	width:170px;
+	overflow:hidden;
+	top:55px;
+	left:0px;
+	display:none;
+	background: #111;
+}
+ul#sdt_menu li div.sdt_box a, ul#sdt_menu li div.sdt_box span{
+	float:left;
+	clear:both;
+	line-height:15px;
+	color:#ccc;
+	font-size: 14px;
+	width: 170px;
+	background: #111;
+	z-index: 9999;
+	font-weight: bold;
+	
+}
+ul#sdt_menu li div.sdt_box a:first-child{
+	margin-top:5px;
+}
+ul#sdt_menu li div.sdt_box a:hover{
+	color:#fff;
+}
