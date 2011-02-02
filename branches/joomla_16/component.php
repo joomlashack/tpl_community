@@ -1,6 +1,6 @@
 <?php
 /**
-* @copyright Copyright (C) 2008 JoomlaPraise. All rights reserved.
+* @copyright Copyright (C) 2008 Joomlashack. All rights reserved.
 */
 
 // no direct access

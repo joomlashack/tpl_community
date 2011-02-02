@@ -9,8 +9,8 @@ foreach ($headerjs['scripts'] as $script=>$type) {
     }
 }
 $this->setHeadData($headerjs);
-?>
-<?php
+
+
 // no direct access
 defined( '_JEXEC' ) or die( 'Restricted index access' );
 switch ($this->countModules('user1')) {
@@ -93,54 +93,54 @@ switch ($this->countModules('user4')) {
 		$user4gridcount = "2";
 		break;
 }
-?>
-<?php
-if ($this->countModules('left') and $layoutstyle=="lmr") :?>
-<?php $leftcolgrid = "grid_".$sidecolumnwidth." pull_".(12-$sidecolumnwidth);?>
-<?php $maingrid = "grid_".(12-$sidecolumnwidth)." push_".$sidecolumnwidth;?>
-<?php endif; ?>
-<?php
-if ($this->countModules('right') and $layoutstyle=="lmr") :?>
-<?php $rightcolgrid = "grid_".$sidecolumnwidth;?>
-<?php $maingrid = "grid_".(12-$sidecolumnwidth);?>
-<?php endif; ?>
-<?php
-if ($this->countModules('left and right') == 1 and $layoutstyle=="lmr") :?>
-<?php $leftcolgrid = "grid_".$sidecolumnwidth." pull_".(12-($sidecolumnwidth)*2);?>
-<?php $rightcolgrid = "grid_".$sidecolumnwidth;?>
-<?php $maingrid = "grid_".(12-($sidecolumnwidth)*2)." push_".$sidecolumnwidth;?>
-<?php endif; ?>
 
-<?php
-if ($this->countModules('left') and $layoutstyle=="mlr") :?>
-<?php $leftcolgrid = "grid_".$sidecolumnwidth;?>
-<?php $maingrid = "grid_".(12-$sidecolumnwidth);?>
-<?php endif; ?>
-<?php
-if ($this->countModules('right') and $layoutstyle=="mlr") :?>
-<?php $rightcolgrid = "grid_".$sidecolumnwidth;?>
-<?php $maingrid = "grid_".(12-$sidecolumnwidth);?>
-<?php endif; ?>
-<?php
-if ($this->countModules('left and right') == 1 and $layoutstyle=="mlr") :?>
-<?php $leftcolgrid = "grid_".$sidecolumnwidth;?>
-<?php $rightcolgrid = "grid_".$sidecolumnwidth;?>
-<?php $maingrid = "grid_".(12-($sidecolumnwidth)*2);?>
-<?php endif; ?>
 
-<?php
-if ($this->countModules('left') and $layoutstyle=="lrm") :?>
-<?php $leftcolgrid = "grid_".$sidecolumnwidth." pull_".(12-$sidecolumnwidth);?>
-<?php $maingrid = "grid_".(12-$sidecolumnwidth)." push_".$sidecolumnwidth;?>
-<?php endif; ?>
-<?php
-if ($this->countModules('right') and $layoutstyle=="lrm") :?>
-<?php $rightcolgrid = "grid_".$sidecolumnwidth." pull_".(12-$sidecolumnwidth);?>
-<?php $maingrid = "grid_".(12-$sidecolumnwidth)." push_".$sidecolumnwidth;?>
-<?php endif; ?>
-<?php
-if ($this->countModules('left and right') == 1 and $layoutstyle=="lrm") :?>
-<?php $leftcolgrid = "grid_".$sidecolumnwidth." pull_".(12-($sidecolumnwidth)*2);?>
-<?php $rightcolgrid = "grid_".$sidecolumnwidth." pull_".(12-($sidecolumnwidth)*2);?>
-<?php $maingrid = "grid_".(12-($sidecolumnwidth)*2)." push_".$sidecolumnwidth*2;?>
-<?php endif; ?>
+if ($this->countModules('left') and $layoutstyle=="lmr") :
+ $leftcolgrid = "grid_".$sidecolumnwidth." pull_".(12-$sidecolumnwidth);
+ $maingrid = "grid_".(12-$sidecolumnwidth)." push_".$sidecolumnwidth;
+ endif; 
+
+if ($this->countModules('right') and $layoutstyle=="lmr") :
+ $rightcolgrid = "grid_".$sidecolumnwidth;
+ $maingrid = "grid_".(12-$sidecolumnwidth);
+ endif; 
+
+if ($this->countModules('left and right') == 1 and $layoutstyle=="lmr") :
+ $leftcolgrid = "grid_".$sidecolumnwidth." pull_".(12-($sidecolumnwidth)*2);
+ $rightcolgrid = "grid_".$sidecolumnwidth;
+ $maingrid = "grid_".(12-($sidecolumnwidth)*2)." push_".$sidecolumnwidth;
+ endif; 
+
+
+if ($this->countModules('left') and $layoutstyle=="mlr") :
+ $leftcolgrid = "grid_".$sidecolumnwidth;
+ $maingrid = "grid_".(12-$sidecolumnwidth);
+ endif; 
+
+if ($this->countModules('right') and $layoutstyle=="mlr") :
+ $rightcolgrid = "grid_".$sidecolumnwidth;
+ $maingrid = "grid_".(12-$sidecolumnwidth);
+ endif; 
+
+if ($this->countModules('left and right') == 1 and $layoutstyle=="mlr") :
+ $leftcolgrid = "grid_".$sidecolumnwidth;
+ $rightcolgrid = "grid_".$sidecolumnwidth;
+ $maingrid = "grid_".(12-($sidecolumnwidth)*2);
+ endif; 
+
+
+if ($this->countModules('left') and $layoutstyle=="lrm") :
+ $leftcolgrid = "grid_".$sidecolumnwidth." pull_".(12-$sidecolumnwidth);
+ $maingrid = "grid_".(12-$sidecolumnwidth)." push_".$sidecolumnwidth;
+ endif; 
+
+if ($this->countModules('right') and $layoutstyle=="lrm") :
+ $rightcolgrid = "grid_".$sidecolumnwidth." pull_".(12-$sidecolumnwidth);
+ $maingrid = "grid_".(12-$sidecolumnwidth)." push_".$sidecolumnwidth;
+ endif; 
+
+if ($this->countModules('left and right') == 1 and $layoutstyle=="lrm") :
+ $leftcolgrid = "grid_".$sidecolumnwidth." pull_".(12-($sidecolumnwidth)*2);
+ $rightcolgrid = "grid_".$sidecolumnwidth." pull_".(12-($sidecolumnwidth)*2);
+ $maingrid = "grid_".(12-($sidecolumnwidth)*2)." push_".$sidecolumnwidth*2;
+ endif; 

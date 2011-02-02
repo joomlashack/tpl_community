@@ -36,26 +36,44 @@ class jShackFunc {
 	 * @author       JoomlaShack
 	 */	
 	function getTemplateParams() {
+		jimport('joomla.version');
+		$version = new JVersion;
 		$app = & JFactory::getApplication(); // Set the J object
-		
-		// Pull in the params file of the template
-		$params_file = JPATH_THEMES.DS.$app->getTemplate().DS.'params.ini';
-		$content = '';
-		
-		// If the params.ini is readable, get content
-		if (is_readable( $params_file ) ) {
-		   $content = file_get_contents( $params_file );
-		} else {
-			echo 'Warning: Template params.ini file is not writable.';
-			exit();
+
+		if ($version->getShortVersion() >= 1.6)
+		{
+			jimport('joomla.form.form');
+			$db = & JFactory::getDBO();
+			$menu = $app->getMenu();
+			$active = $menu->getActive();
+			if ($active->template_style_id) $query = "SELECT params FROM #__template_styles WHERE `id` = '".$active->template_style_id."' LIMIT 1";
+			else $query = "SELECT params FROM #__template_styles WHERE `client_id` = '0' AND `home` = '1' LIMIT 1";
+			$db->setQuery($query);
+			$result = $db->loadResult();
+			$params = new JForm(json_decode($result));
+
+			return $params->getName();
 		}
-		
-		// Assign parameters object
-		$templateParams = new JParameter( $content );
-		
-		return $templateParams; // return object
+		else
+		{
+
+			// Pull in the params file of the template
+			$params_file = JPATH_THEMES.DS.$app->getTemplate().DS.'params.ini';
+			$content = '';
+
+			// If the params.ini is readable, get content
+			if (is_readable( $params_file ) ) {
+			   $content = file_get_contents( $params_file );
+			} else {
+				echo 'Warning: Template params.ini file is not writable.';
+				exit();
+			}
+
+			// Assign parameters object
+			$templateParams = new JParameter( $content );
+
+			return $templateParams; // return object
+		}
 	}
 	
 }
-
-?>
