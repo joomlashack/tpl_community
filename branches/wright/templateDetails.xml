@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.5/template-install.dtd">
+<install version="1.5" type="template" method="upgrade">
+	<name>js_community</name>
+	<creationDate>Nov 2009</creationDate>
+	<author>Barrie North / Cory Webb / Tito Alvarez / Marcos Bailon</author>
+	<authorEmail>support@joomlashack.com</authorEmail>
+	<authorUrl>http://www.joomlashack.com</authorUrl>
+	<copyright>Copyright Joomlashck 2012. All rights reserved</copyright>
+	<license>Commercial license - single domain use only</license>
+	<version>2.0.0</version>
+    <description>
+			<![CDATA[
+			<h2>JS Community</h2>
+<img src="../templates/js_community/template_thumbnail.png" style="border:2px solid #ccc; padding: 2px; float: left; margin-bottom: 10px;" /><div class="clr"></div><p>JS Community is a <strong><a href="http://www.joomlashack.com/recommended/50-external/4-jomsocial">Jomsocial Ready</a></strong> Joomla template with lots of white space, bold fonts and raw SEO power.</p><p>With a powerful CSS grid framework, flexible layouts and modules and a big bag of SEO tricks, JS Community makes a perfect template for communities like churches and clubs to get to grips with <a href="http://www.joomlashack.com/recommended/50-external/4-jomsocial">Jomsocial</a> and launching themselves into the web.</p><p>Important Links </p><ul><li><a href="http://www.joomlashack.com/recommended/50-external/4-jomsocial">Jomsocial</a></li><li><a href="http://www.joomlashack.com/support">Joomlashack Support</a></li><li><a href="http://www.joomlashack.com/community/index.php/board,1888.0.html">Joomlashack Community Forum for free customization help</a></li><li><a href="http://demotemplates.joomlashack.com/community">Template help and set-up guide</a></li></ul><p>Thanks for purchasing a Joomlashack template!</p>
+			<h3>Changelog</h3>
+			<b>1.0.12</b><br />
+			<ul>
+			<li>Updated to work with latest version of JomSocial</li>
+			</ul>
+			<b>2.0.0</b><br />
+			<ul>
+			<li>Updated to Wright framework</li>
+			</ul>
+			]]> 	
+    </description>
+	<files>
+		<filename>component.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>functions.php</filename>
+		<filename>index.php</filename>
+		<filename>index.html</filename>
+		<filename>params.ini</filename>
+		<filename>template.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_thumbnail.png</filename>
+		<folder>css/</folder>
+		<folder>html/</folder>
+		<folder>js/</folder>
+		<folder>images/</folder>
+		<folder>wright/</folder>
+</files>
+	<positions>
+		<position>menu</position>
+		<position>logo</position>
+		<position>newsflash</position>
+		<position>sidebar1</position>
+		<position>sidebar2</position>
+		<position>grid-top</position>
+		<position>above-content</position>
+		<position>below-content</position>
+		<position>grid-bottom</position>
+		<position>footer</position>
+		<position>debug</position>
+		<position>breadcrumb</position>
+	</positions>
+	<params addpath="/templates/js_community/wright/parameters/joomla_1.5">
+        <!-- Start of default Wright params -->
+		<param name="helper" type="help" label="Need Help?" />
+		<param name="rebrand" type="rebrand" default="no" label="Remove Branding" description="This setting removes the branding from the footer of the template." />
+		<param name="style" type="styles" default="theme1" label="Style" description="Select which of the style variations you wish to use." />
+		<param name="mootools" type="radio" default="1" label="Enable Mootools" description="Turn off Joomla core Mootools.js">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param name="logo" type="logo" default="template" label="Logo Image" description="You can select your logo from the images directory after you upload the image." />
+		<param name="logowidth" type="grid" default="4" label="Logo Width" description="Select the column width for the logo, the rest of the space will be given to the newsflash module, or if you set it to full width the module will dissapear" />
+		<param name="body_font" type="typography" default="arial" label="Body Font" description="Select the default font face for the body" />
+		<param name="header_font" type="typography" default="arial" label="Heading Font" description="Select the default font face for the headers" />
+		<param name="grids" type="text" default="12" label="Grids Columns" description="Number of columns in the grid system" />
+        <param name="columns" type="columns" default="sidebar1:3;main:6;sidebar2:3" sidebars="2" label="Columns" description="You can set the default widths and arrange the main columns. Any columns that are unused will just be hidden and the main column will be widened." />
+		<param name="doctype" type="list" default="html5" label="Doctype" description="">
+			<option value="html5">HTML5</option>
+			<option value="xhtml1transitional">XHTML 1 Transitional</option>
+			<option value="xhtml1strict">XHTML 1 Strict</option>
+		</param>
+        <!-- End of default Wright params -->
+		<param name="headline" type="text" default="Wireframe Joomla Template" size="50" label="Logo text" description="Header text to be displayed or SEO text for image" />
+		<param name="slogan" type="text" default="Your Site Slogan" size="50" label="Slogan" description="Slogan text to be displayed or SEO text for image" />
+		<param name="logoheight" type="text" default="50" label="Logo Height" description="Enter your logo image height (ONLY enter numerical value)" size="3" />		
+	</params>
+	<config>
+		<fields name="params" addfieldpath="/templates/js_community/wright/parameters/joomla_1.6">
+			<fieldset name="basic">
+                <!-- Start of default Wright params -->
+				<field name="helper" type="help" label="Need Help?" />
+				<field name="rebrand" type="rebrand" default="no" label="Remove Branding" description="This setting removes the branding from the footer of the template." />
+				<field name="style" type="styles" default="theme1" label="Style" description="Select which of the style variations you wish to use." />
+				<field name="mootools" type="radio" default="1" label="Enable Mootools" description="Turn off Joomla core Mootools.js">
+					<option value="0">NO</option>
+					<option value="1">YES</option>
+				</field>
+				<field name="logo" type="logo" default="template" label="Logo Image" description="You can select your logo from the images directory after you upload the image." />
+				<field name="logowidth" type="grid" defualt="4" label="Logo Width" description="Select the column width for the logo, the rest of the space will be given to the newsflash module, or if you set it to full width the module will dissapear" />
+				<field name="body_font" type="typography" default="arial" label="Body Font" description="Select the default font face for the body" />
+				<field name="header_font" type="typography" default="arial" label="Heading Font" description="Select the default font face for the headers" />
+				<field name="columns" type="columns" default="sidebar1:3;main:6;sidebar2:3" sidebars="2" label="Columns" description="You can set the default widths and arrange the main columns. Any columns that are unused will just be hidden and the main column will be widened." />
+				<field name="doctype" type="list" default="html5" label="Doctype" description="">
+					<option value="html5">HTML5</option>
+					<option value="xhtml1transitional">XHTML 1 Transitional</option>
+					<option value="xhtml1strict">XHTML 1 Strict</option>
+				</field>
+                <!-- End of default Wright params -->
+ 				<field name="headline" type="text" default="Wireframe Joomla Template" size="50" label="Logo text" description="Header text to be displayed or SEO text for image" />
+				<field name="slogan" type="text" default="Your Site Slogan" size="50" label="Slogan" description="Slogan text to be displayed or SEO text for image" />
+				<field name="logoheight" type="text" default="50" label="Logo Height" description="Enter your logo image height (ONLY enter numerical value)" size="3" />		
+			</fieldset>
+		</fields>
+	</config>
+</install>
