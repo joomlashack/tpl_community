@@ -200,6 +200,10 @@ h3, h5 { color: #777; }
 #logo-text h1 { margin: 40px 0 0; padding: 0; line-height: 30px; font-weight: bold; }
 #logo-text h1 a { text-decoration: none; font-size: 2em; font-weight: bold; }
 
+#logo-text h2 {
+    padding-left: 15px;
+}
+
 /*INSET/QUOTE*/
 #inset .moduletable {
 	margin: 12px 0 0;
