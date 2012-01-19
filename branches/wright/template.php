@@ -43,14 +43,7 @@ height:<?php echo $logoheight;?>px;}
 			<div class="grid_<?php echo $logogridsize;?> alpha">
 				<div class="inside clearfix">
 				<!--Sets a grid the size of chosen parameter-->
-				<?php if ($headerstyle == "template") :?>
-					<div id="logo-text">
-						<h1><a href="<?php echo JURI::base(); ?>" title="<?php echo $app->getCfg('sitename'); ?>"><?php echo $headline;?></a></h1>
-						<h2><?php echo $slogan;?></h2>
-					</div>
-					<?php else: ?>
-						<w:logo />
-					<?php endif; ?>
+					<w:logo />
 				</div><!--End of .inside-->
 			</div>
 			<?php if($this->countModules('newsflash')) : ?>

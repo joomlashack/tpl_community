@@ -18,7 +18,19 @@ input.button, button {
 
 /*--HEADER--*/
 #headerWrapper {
-	background: url(../images/style2/header_gradient.png) repeat-x;
+	background-image: linear-gradient(bottom, rgb(238,238,238) 6%, rgb(255,255,255) 27%);
+	background-image: -o-linear-gradient(bottom, rgb(238,238,238) 6%, rgb(255,255,255) 27%);
+	background-image: -moz-linear-gradient(bottom, rgb(238,238,238) 6%, rgb(255,255,255) 27%);
+	background-image: -webkit-linear-gradient(bottom, rgb(238,238,238) 6%, rgb(255,255,255) 27%);
+	background-image: -ms-linear-gradient(bottom, rgb(238,238,238) 6%, rgb(255,255,255) 27%);
+	
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.06, rgb(238,238,238)),
+		color-stop(0.27, rgb(255,255,255))
+	);
 }
 
 #logo-text h1 a { text-decoration: none; font-size: 2em; color: #7b858e; }

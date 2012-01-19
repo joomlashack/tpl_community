@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Arvo);
 /* @override http://localhost:80/community_new/templates/js_community/css/core.css */
 
 /*OVERRIDE GLOBALS*/
@@ -111,7 +112,7 @@ p.warn{background:#FFF7C0 url(../images/icon_assets.gif) no-repeat 3px -147px;te
 p.alert{background:#FBEEF1 url(../images/icon_assets.gif) no-repeat 3px -297px;text-align:left;border-top:2px solid #FEABB9;border-bottom:2px solid #FEABB9;margin:0.75em 0;padding:.05em 20px .05em 45px;}
 ul.checklist li{background:url(../images/icon_assets.gif) no-repeat 0 4px;line-height:24px;padding-left:20px;list-style:none;}
 /* CODE    */pre{border:1px dotted #e8e8e8;border-left:10px solid #b4b4b4;background:#fafafa;font-size:120%;color:#304257;font-family:"Courier New", Courier, monospace;line-height:100%;white-space:normal;margin:10px 0;padding:5px 0 5px 10px;}
-/* warning, info and alert styles     */p.quote{color:#424242;letter-spacing:.2em;text-align:center;text-transform:uppercase;border-bottom:4px solid #eee;border-top:4px solid #eee;font:normal small-caps normal 1em/125% Georgia, Garamond, Times, serif;margin:24px auto;padding:5px;}
+/* warning, info and alert styles     */p.quote{color:#424242;letter-spacing:.2em;text-align:center;text-transform:uppercase;border-bottom:4px solid #eee;border-top:4px solid #eee;font:normal small-caps normal 1em/125% Arvo, Georgia, Garamond, Times, serif;margin:24px auto;padding:5px;}
 p.quote:first-letter{display:block;float:left;font-size:250%;margin:4px 0 0;}
 /* @group Joomla Specific Styles     */.articleheading h2 a{text-decoration:none;}
 /* @group Columns  */.cols1{display:block;float:none !important;margin:0 !important;}
@@ -139,7 +140,7 @@ body { margin: 0; color: #888; font: 13px/1.5 "Lucida Grande", Lucida, Verdana, 
 
 /*--TEMPLATE TYPOGRAPHY and MISC--*/
 h1,h2,h3,h4,h5,h6 { 
-	font-family: Georgia, "Times New Roman", Times, serif;
+	font-family: Arvo, Georgia, "Times New Roman", Times, serif;
 	font-weight: normal;
 	font-style: normal;
 }
@@ -148,7 +149,7 @@ h3, h5 { color: #777; }
 
 #banner, #banner h3, #footer, #footer h3 { color: #fff; }
 
-#copyright, .designer { font-family: Georgia, "Times New Roman", Times, serif; }
+#copyright, .designer { font-family: Arvo, Georgia, "Times New Roman", Times, serif; }
 
 /*--JOOMLA CORE STYLES--*/
 
@@ -208,7 +209,7 @@ h3, h5 { color: #777; }
 #inset .moduletable {
 	margin: 12px 0 0;
 	color: #999;
-	font: 1.2em Georgia, "Times New Roman", Times, serif;
+	font: 1.2em Arvo, Georgia, "Times New Roman", Times, serif;
 	line-height: 24px;
 }
 
@@ -221,7 +222,7 @@ h3, h5 { color: #777; }
 #menu ul { 
 	list-style: none; 
 	margin: 0; 
-	font-family: Georgia, "Times New Roman", Times, serif; 
+	font-family: Arvo, Georgia, "Times New Roman", Times, serif; 
 }
 
 #menu ul li { float: left; margin: 0; }
