@@ -4,7 +4,7 @@
 	<name>js_community</name>
 	<creationDate>Nov 2009</creationDate>
 	<author>Barrie North / Cory Webb / Tito Alvarez / Marcos Bailon</author>
-	<authorEmail>support@joomlashack.com</authorEmail>
+	<authorEmail>help@joomlashack.com</authorEmail>
 	<authorUrl>http://www.joomlashack.com</authorUrl>
 	<copyright>Copyright Joomlashck 2012. All rights reserved</copyright>
 	<license>Commercial license - single domain use only</license>
@@ -12,16 +12,7 @@
     <description>
 			<![CDATA[
 			<h2>JS Community</h2>
-<img src="../templates/js_community/template_thumbnail.png" style="border:2px solid #ccc; padding: 2px; float: left; margin-bottom: 10px;" /><div class="clr"></div><p>JS Community is a <strong><a href="http://www.joomlashack.com/recommended/50-external/4-jomsocial">Jomsocial Ready</a></strong> Joomla template with lots of white space, bold fonts and raw SEO power.</p><p>With a powerful CSS grid framework, flexible layouts and modules and a big bag of SEO tricks, JS Community makes a perfect template for communities like churches and clubs to get to grips with <a href="http://www.joomlashack.com/recommended/50-external/4-jomsocial">Jomsocial</a> and launching themselves into the web.</p><p>Important Links </p><ul><li><a href="http://www.joomlashack.com/recommended/50-external/4-jomsocial">Jomsocial</a></li><li><a href="http://www.joomlashack.com/support">Joomlashack Support</a></li><li><a href="http://www.joomlashack.com/community/index.php/board,1888.0.html">Joomlashack Community Forum for free customization help</a></li><li><a href="http://demotemplates.joomlashack.com/community">Template help and set-up guide</a></li></ul><p>Thanks for purchasing a Joomlashack template!</p>
-			<h3>Changelog</h3>
-			<b>1.0.12</b><br />
-			<ul>
-			<li>Updated to work with latest version of JomSocial</li>
-			</ul>
-			<b>2.0.0</b><br />
-			<ul>
-			<li>Updated to Wright framework</li>
-			</ul>
+<p>Thanks for installing JS Community from Joomlashack!</p>
 			]]> 	
     </description>
 	<files>
