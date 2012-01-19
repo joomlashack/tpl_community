@@ -68,7 +68,7 @@
         <!-- End of default Wright params -->
 		<param name="headline" type="text" default="Community" size="50" label="Logo text" description="Header text to be displayed or SEO text for image" />
 		<param name="slogan" type="text" default="by Joomlashack" size="50" label="Slogan" description="Slogan text to be displayed or SEO text for image" />
-		<param name="logoheight" type="text" default="50" label="Logo Height" description="Enter your logo image height (ONLY enter numerical value)" size="3" />		
+		<param name="logoheight" type="text" default="100" label="Logo Height" description="Enter your logo image height (ONLY enter numerical value)" size="3" />		
 	</params>
 	<config>
 		<fields name="params" addfieldpath="/templates/js_community/wright/parameters/joomla_1.6">
@@ -94,7 +94,7 @@
                 <!-- End of default Wright params -->
  				<field name="headline" type="text" default="Community" size="50" label="Logo text" description="Header text to be displayed or SEO text for image" />
 				<field name="slogan" type="text" default="by Joomlashack" size="50" label="Slogan" description="Slogan text to be displayed or SEO text for image" />
-				<field name="logoheight" type="text" default="50" label="Logo Height" description="Enter your logo image height (ONLY enter numerical value)" size="3" />		
+				<field name="logoheight" type="text" default="100" label="Logo Height" description="Enter your logo image height (ONLY enter numerical value)" size="3" />		
 			</fieldset>
 		</fields>
 	</config>
