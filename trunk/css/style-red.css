@@ -21,6 +21,8 @@ input.button, button {
 
 /*--HEADER--*/
 #headerWrapper {
+	background-color: #ffffff;
+
 	background-image: linear-gradient(bottom, rgb(238,238,238) 6%, rgb(255,255,255) 27%);
 	background-image: -o-linear-gradient(bottom, rgb(238,238,238) 6%, rgb(255,255,255) 27%);
 	background-image: -moz-linear-gradient(bottom, rgb(238,238,238) 6%, rgb(255,255,255) 27%);
