@@ -13,6 +13,12 @@ $slogan				= $this->params->get("slogan");
 $headerstyle		= $this->params->get("logo", "text");
 $logogridsize		= $this->params->get("logowidth");
 $logoheight			= $this->params->get("logoheight");
+
+class WrightTemplate extends WrightTemplateBase {
+	public $suffixes = true;  // allows stacked suffixes
+}
+
+
 ?>
 <doctype>
 <html>
