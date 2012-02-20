@@ -52,10 +52,10 @@ height:<?php echo $logoheight;?>px;}
 					<w:logo />
 				</div><!--End of .inside-->
 			</div>
-			<?php if($this->countModules('newsflash')) : ?>
+			<?php if($this->countModules('top')) : ?>
 			<!--Uses up the rest of the grid for a module-->
 			<div id="inset" class="grid_<?php echo (12-$logogridsize);?> omega clearfix">
-				<w:module name="newsflash" chrome="xhtml" />
+				<w:module name="top" chrome="xhtml" />
 			</div>
 			<?php endif; ?>
 		</div><!-- #header -->
