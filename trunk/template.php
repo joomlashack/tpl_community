@@ -83,7 +83,6 @@ height:<?php echo $logoheight;?>px;}
 			<div id="area_content" class="clearfix">
 				<!--Start of main content-->
 			  <section id="main">
-			      <jdoc:include type="message" />
 			      <?php if ($this->countModules('breadcrumbs')) : ?>
         		  <div id="pathway">
         		    <div id="pathway-inner">
