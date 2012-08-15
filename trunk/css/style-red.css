@@ -44,12 +44,12 @@ input.button, button {
 #logo-text h2 { color: #333; }
 
 /*--MAIN MENU--*/
-#menu ul li a {
+#menu ul li a, #menu ul li span.separator {
 	border-right: 1px solid #6f1810;
 	color: #fff;
 }
 
-#menu ul li.active, #menu ul li.current, #menu ul li a:hover {
+#menu ul li.active, #menu ul li.current, #menu ul li a:hover, #menu ul li:hover span.separator {
 	background-color: #ba281a;
 }
 
