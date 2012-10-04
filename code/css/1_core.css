@@ -459,3 +459,42 @@ color: #fff; }
 #community-wrap #cToolbarNav.cToolbar ul#cToolbarNavList li.toolbar-active div a.has-separator{
 border-bottom:1px solid #333 !important;
 }
+ul li ul li {
+	margin-left: 10px;
+}
+.module{
+	overflow:hidden;
+}
+fieldset.filters div.alert{
+	margin: 0 ;
+	padding: 0;
+	border: 0 none;
+	border-radius:0 0 0 0;
+}
+.content_rating{
+	margin-bottom:10px;
+}
+.cat-list {
+	margin-bottom: 10px;
+	border-bottom:1px solid #ccc;
+}
+.ordering-box{
+	padding: 5;
+}
+.category thead tr th{
+	text-align: left;
+}
+
+.panel .content{
+	padding: 10px;
+}
+.panel h3{
+	margin-left: 0;
+}
+.category thead tr{
+	margin-bottom: 5px;
+	border-bottom: 1px solid #ccc;
+}
+.login-fields label{
+	min-width: 90px;
+}
