@@ -46,18 +46,9 @@ height:<?php echo $logoheight;?>px;}
 	
 	<div id="headerWrapper" style="height:<?php echo $logoheight;?>px;">
 		<div id="header" class="container_12 clearfix">
-			<div class="grid_<?php echo $logogridsize;?> alpha">
-				<div class="inside clearfix">
-				<!--Sets a grid the size of chosen parameter-->
-					<w:logo />
-				</div><!--End of .inside-->
+			<div class="inside clearfix">
+				<w:logo />
 			</div>
-			<?php if($this->countModules('top')) : ?>
-			<!--Uses up the rest of the grid for a module-->
-			<div id="inset" class="grid_<?php echo (12-$logogridsize);?> omega clearfix">
-				<w:module name="top" chrome="xhtml" />
-			</div>
-			<?php endif; ?>
 		</div><!-- #header -->
 	</div><!-- #headerWrapper -->	
 

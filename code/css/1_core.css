@@ -291,7 +291,7 @@ h3, h5 { color: #777; }
 	padding: 20px 0;
 }
 
-.inside { padding: 10px; }
+.inside { padding: 10px 0; }
 
 /*USER1*/
 #user1 { margin-bottom: 20px; }
