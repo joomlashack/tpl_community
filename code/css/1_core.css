@@ -261,13 +261,13 @@ h3, h5 { color: #777; }
 	float: none;
 }
  
-#menu ul ul li a {
+#menu ul ul li a,#menu ul ul li span.separator {
 	margin: 0;
 	padding: 10px;	
 	border-right: none;
 }
  
-#menu ul ul a, #menu ul li#current ul a {
+#menu ul ul a, #menu ul li#current ul a,#menu ul ul span.separator, #menu ul li#current ul span.separator {
 	width: 280px;
 	font-size: 16px;
 	text-align: left;
