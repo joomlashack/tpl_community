@@ -1,6 +1,6 @@
 <?php
 /**
- * @package     Wright
+ * @package     Community
  * @subpackage  Component File
  *
  * @copyright   Copyright (C) 2005 - 2013 Joomlashack. Meritage Assets.  All rights reserved.
