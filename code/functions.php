@@ -1,11 +1,25 @@
 <?php
 /**
- * @copyright	Copyright (C) 2005 - 2011 Joomlashack / Meritage Assets
- * @author		Jeremy Wilken - Joomlashack
- * @package		Wright
+ * @package     Community
+ * @subpackage  Functions
  *
- * Use this file to add any PHP to the template before it is executed
+ * @copyright   Copyright (C) 2005 - 2013 Joomlashack. Meritage Assets.  All rights reserved.
+ * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */
- 
+
 // Restrict Access to within Joomla
 defined('_JEXEC') or die('Restricted access');
+
+define( 'YOURBASEPATH', dirname(__FILE__) );
+
+$app = JFactory::getApplication();
+
+$headline			= $this->params->get("headline");
+$slogan				= $this->params->get("slogan");
+$headerstyle		= $this->params->get("logo", "text");
+$logogridsize		= $this->params->get("logowidth");
+$logoheight			= $this->params->get("logoheight");
+
+class WrightTemplate extends WrightTemplateBase {
+	public $suffixes = true;  // allows stacked suffixes
+}
