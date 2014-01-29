@@ -24,7 +24,7 @@ a.regusr{background:url(../images/icon_assets.gif) no-repeat 0 -60px;}
 div.contentpaneopen,table.contentpaneopen td.buttonheading,table.blog table.contentpaneopen td.buttonheading{margin:0;padding:0;}
 div.mosimage{margin:5px;}
 .pagenav{padding:3px 5px 3px 3px;}
-.small,.createdate,.modifydate{font:11px Tahoma;}
+.small,.createdate,.modifydate{font-size:11px;}
 table.contenttoc{float:right;margin:5px;padding:1px;}
 table.contenttoc th{padding:2px 10px;}
 table.contenttoc td{font-size:0.9em;font-weight:400;text-align:left;padding:2px 0 2px 4px;}
@@ -497,4 +497,18 @@ fieldset.filters div.alert{
 }
 .login-fields label{
 	min-width: 90px;
+}
+
+.contact dl {
+	display: block;
+}
+.contact dl dd {
+	padding: 0;
+}
+.contact dl > dd + dt,
+.contact dl > dd + dt + dd {
+	border: none;
+}
+.contact h3 {
+	clear: both;
 }
