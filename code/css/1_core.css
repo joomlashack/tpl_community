@@ -139,7 +139,7 @@ body { margin: 0; color: #888; font: 13px/1.5 "Lucida Grande", Lucida, Verdana, 
 }
 
 /*--TEMPLATE TYPOGRAPHY and MISC--*/
-h1,h2,h3,h4,h5,h6 { 
+h1,h2,h3,h4,h5,h6 {
 	font-family: Arvo, Georgia, "Times New Roman", Times, serif;
 	font-weight: normal;
 	font-style: normal;
@@ -177,7 +177,7 @@ h3, h5 { color: #777; }
 .article-icons { float: right; }
 
 .leading {
-	background-color: #f7f8f8;	
+	background-color: #f7f8f8;
 	padding: 10px;
 	border: 1px solid #eee;
 }
@@ -219,10 +219,10 @@ h3, h5 { color: #777; }
 	overflow: hidden;
 }
 
-#menu ul { 
-	list-style: none; 
-	margin: 0; 
-	font-family: Arvo, Georgia, "Times New Roman", Times, serif; 
+#menu ul {
+	list-style: none;
+	margin: 0;
+	font-family: Arvo, Georgia, "Times New Roman", Times, serif;
 }
 
 #menu ul li { float: left; margin: 0; }
@@ -240,10 +240,11 @@ h3, h5 { color: #777; }
 }
 
 #menu ul ul {
-	position: absolute;
+	left: -9999px;
 	list-style: none;
 	margin: 0 0 0 9px;
-	left: -9999px;
+	padding: 0;
+	position: absolute;
 	z-index: 9999;
 }
 
@@ -260,13 +261,13 @@ h3, h5 { color: #777; }
 	margin: 0;
 	float: none;
 }
- 
+
 #menu ul ul li a,#menu ul ul li span.separator {
 	margin: 0;
-	padding: 10px;	
+	padding: 10px;
 	border-right: none;
 }
- 
+
 #menu ul ul a, #menu ul li#current ul a,#menu ul ul span.separator, #menu ul li#current ul span.separator {
 	width: 280px;
 	font-size: 16px;
@@ -274,11 +275,11 @@ h3, h5 { color: #777; }
 	margin: 0;
 	background: none;
 }
- 
+
 #menu ul ul li a:hover, #menu ul li#current ul li a:hover {
 	background: #87ce13;
 }
- 
+
 #menu ul li:hover ul, #menu ul li.hover ul {left: auto;}
 #menu ul li:hover ul ul, #menu ul li.hover ul ul {left: -9999px;}
 #menu ul ul li:hover ul, #menu ul ul li.hover ul { left: auto; }
@@ -298,10 +299,10 @@ h3, h5 { color: #777; }
 
 /*SIDEBAR MODULES*/
 #sidebar1 .module,
-#sidebar2 .module, 
+#sidebar2 .module,
 .modules1, .modules2, .modules3, .modules4 {
 	margin-bottom: 20px;
-}	
+}
 
 #sidebar1 .module ul, #sidebar2 .module ul, .modules1 ul,
 .modules2 ul, .modules3 ul, .modules4 ul {
@@ -309,19 +310,19 @@ h3, h5 { color: #777; }
 	list-style: none;
 }
 
-#sidebar1 .module ul li, 
-#sidebar2 .module ul li, .modules1 ul li, 
+#sidebar1 .module ul li,
+#sidebar2 .module ul li, .modules1 ul li,
 .modules2 ul li, .modules3 ul li, .modules4 ul li { margin: 0 0 10px; }
 
 /*ROUNDED CORNER SETUP*/
-#banner .module, #footer .module, #sidebar1 .moduletable, 
-#sidebar2 .moduletable, .moduletables1, .moduletables2, 
+#banner .module, #footer .module, #sidebar1 .moduletable,
+#sidebar2 .moduletable, .moduletables1, .moduletables2,
 .moduletables3, .moduletables4 { position: relative; /*width: 100%;*/ }
 
-#sidebar1 .module, #sidebar2 .module { 
-	background-color: #f7f8f8; 
-	border-radius: 10px;	
-	border: 1px solid #ccc;							
+#sidebar1 .module, #sidebar2 .module {
+	background-color: #f7f8f8;
+	border-radius: 10px;
+	border: 1px solid #ccc;
 }
 #sidebar1 .module .pad, #sidebar2 .module .pad,
 .modules1 .pad, .modules2 .pad,
@@ -329,11 +330,11 @@ h3, h5 { color: #777; }
 .module .pad, .modulenone .pad{
 	padding : 15px;
 }
-.module .side, .moduletable .side, .modules1 .side, .modules2 .side, .modules3 .side, .modules4 .side { 
-	position: absolute; 
-	width: 10px; 
-	height: 10px; 
-	font-size: 0%; 
+.module .side, .moduletable .side, .modules1 .side, .modules2 .side, .modules3 .side, .modules4 .side {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	font-size: 0%;
 }
 
 #banner .module ,
@@ -360,8 +361,8 @@ h3, h5 { color: #777; }
 
 #sidebar1 .module h3,
 #sidebar2 .module h3,
-.modules1 h3, 
-.modules2 h3, 
+.modules1 h3,
+.modules2 h3,
 .modules3 h3,
 .modules4 h3,
 .module h3 {
@@ -377,9 +378,9 @@ h3, h5 { color: #777; }
 .modulenone .module_body { border: none !important; }
 
 /*Blue corners*/
-.modules1 { 
+.modules1 {
 background-color: #1e5d74;
-color: #fff; 
+color: #fff;
 border-radius:10px;
 
 }
@@ -511,4 +512,11 @@ fieldset.filters div.alert{
 }
 .contact h3 {
 	clear: both;
+}
+
+.btn-group .dropdown-menu li {
+	text-align: left;
+}
+.panel h3.pane-toggler-down{
+	box-shadow: 0 0 0;
 }
