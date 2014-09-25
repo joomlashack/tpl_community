@@ -2,18 +2,18 @@
 <!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.5/template-install.dtd">
 <extension version="2.5" type="template" method="upgrade" client="site">
 	<name>js_community</name>
-	<creationDate>January 2014</creationDate>
+	<creationDate>September 2014</creationDate>
 	<author>Joomlashack</author>
 	<authorEmail>help@joomlashack.com</authorEmail>
 	<authorUrl>http://www.joomlashack.com</authorUrl>
 	<copyright>Copyright Joomlashck 2012 - 2014. All rights reserved</copyright>
 	<license>Commercial license - single domain use only</license>
-	<version>3.0.3</version>
+	<version>3.0.4</version>
     <description>
 			<![CDATA[
 			<h2>JS Community</h2>
 <p>Thanks for installing JS Community from Joomlashack!</p>
-			]]> 	
+			]]>
     </description>
 	<files>
 		<filename>component.php</filename>
@@ -69,7 +69,7 @@
                 <!-- End of default Wright params -->
  				<field name="headline" type="text" default="Community" size="50" label="Logo text" description="Header text to be displayed or SEO text for image" />
 				<field name="slogan" type="text" default="by Joomlashack" size="50" label="Slogan" description="Slogan text to be displayed or SEO text for image" />
-				<field name="logoheight" type="text" default="100" label="Logo Height" description="Enter your logo image height (ONLY enter numerical value)" size="3" />		
+				<field name="logoheight" type="text" default="100" label="Logo Height" description="Enter your logo image height (ONLY enter numerical value)" size="3" />
 			</fieldset>
 		</fields>
 	</config>
