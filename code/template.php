@@ -10,103 +10,180 @@
  * 'custom.php' in the same folder, and it will override this file. That way
  * if you update the template ever, your changes will not be lost.
  */
-// no direct access
-defined('_JEXEC') or die('Restricted access');
 
+// No direct access
+defined('_JEXEC') or die('Restricted access');
 
 ?>
 <doctype>
 <html>
-<head>
-<w:head />
-
-<!--[if lte IE 6]>
-	<link rel="stylesheet" type="text/css" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->document->template ?>/css/ie6.css" media="screen" />
-	<script type="text/javascript" src="<?php echo $this->baseurl ?>/templates/<?php echo $this->document->template ?>/js/pngfix.js"></script>
-	<script type="text/javascript" src="<?php echo $this->baseurl ?>/templates/<?php echo $this->document->template ?>/js/ie6.js"></script>
-<script>
-  POS_BrowserPNG.fix('img.trans,#logo-graphic h1 a,.trans,a.forgotpass,a.forgotuser,a.regusr,ul.checklist li,.designer a,.arrow,.readon,.submitBtn');
-</script>
-<![endif]-->
-<!--[if IE]><link rel="stylesheet" type="text/css" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->document->template ?>/css/ie.css" media="screen" />
-<![endif]-->
-<style type="text/css" media="screen">
-#logo-graphic h1 a{
-width:<?php echo ((80*$logogridsize)-20);?>px;
-line-height:<?php echo $logoheight;?>px;
-height:<?php echo $logoheight;?>px;}
-</style>
-</head>
-<body>
-
-	<div id="headerWrapper" style="height:<?php echo $logoheight;?>px;">
-		<div id="header" class="container_12 clearfix">
-			<div class="inside clearfix">
-				<w:logo />
+	<head>
+		<w:head />
+	</head>
+	<body class="<?php echo $wrightBodyClass ?>">
+		<?php
+			if ($this->countModules('toolbar'))
+				:
+		?>
+		<!-- toolbar -->
+		<w:nav containerClass="<?php echo $wrightContainerClass ?>" rowClass="<?php echo $wrightGridMode ?>" wrapClass="navbar-fixed-top navbar-inverse" type="toolbar" name="toolbar" />
+		<?php
+			endif;
+		?>
+		<div class="<?php echo $wrightContainerClass; ?>">
+			<!-- header -->
+			<header id="header">
+				<div class="<?php echo $wrightGridMode; ?> clearfix">
+					<w:logo name="top" />
+					<div class="clear"></div>
+				</div>
+			</header>
+			<?php
+				if ($this->countModules('menu'))
+					:
+			?>
+			<!-- menu -->
+	   		<w:nav name="menu" />
+			<?php
+				endif;
+			?>
+			<!-- featured -->
+			<?php
+				if ($this->countModules('featured'))
+					:
+			?>
+			<div id="featured">
+				<w:module type="none" name="featured" />
 			</div>
-		</div><!-- #header -->
-	</div><!-- #headerWrapper -->
-
-	<?php if($this->countModules('menu')) : ?>
-	<div id="menuWrapper">
-		<div id="menu" class="container_12 clearfix">
-			<w:module name="menu" chrome="none" />
-		</div><!-- #menu -->
-	</div><!-- #menuWrapper -->
-	<?php endif; ?>
-
-	<?php if($this->countModules('grid-top')) : ?>
-	<div id="banner_wrapper" class="clearfix">
-		<div id="banner" class="container_12 clearfix">
-			<w:module type="grid" name="grid-top" grid="6" chrome="wrightflexgrid" />
-			<div class="clear">&nbsp;</div>
-		</div><!-- #banner -->
-	</div><!-- #banner_wrapper -->
-	<?php endif; ?>
-
-	<div id="main_wrapper" class="clearfix">
-		<div id="main_area_wrapper" class="container_12 clearfix">
-			<div id="area_content" class="clearfix">
-				<!--Start of main content-->
-			  <section id="main">
-			      <?php if ($this->countModules('breadcrumbs')) : ?>
-        		  <div id="pathway">
-        		    <div id="pathway-inner">
-        		      <w:module type="single" name="breadcrumbs" chrome="none" />
-        		      <div class="clear"></div>
-        		    </div>
-        		  </div>
-        		  <div class="clear"></div>
-        		  <?php endif; ?>
-			      <w:content />
-
-			  </section>
-			  <?php if($this->countModules('sidebar1')) : ?>
-			  <aside id="sidebar1">
-			  	<w:module name="sidebar1" chrome="wrightflexgrid" />
-			  </aside>
-			  <?php endif; ?>
-
-			  <aside id="sidebar2">
-			  	<w:module name="sidebar2" chrome="wrightflexgrid" />
-			  </aside>
-
-			  <div class="clear">&nbsp;</div>
-			  <!--End of main content-->
-			</div><!-- #area_content -->
-		</div><!-- #main_area -->
-	</div><!-- #main_wrapper -->
-
-	<div id="footerWrapper">
-		<div id="footer" class="container_12 clearfix">
-			<w:module type="grid" name="grid-bottom" chrome="wrightflexgrid" />
-		<div id="copyright" class="grid_12">
-				<w:module name="footer" chrome="xhtml" />
+			<?php
+				endif;
+			?>
+			<!-- grid-top -->
+			<?php
+				if ($this->countModules('grid-top'))
+					:
+			?>
+			<div id="grid-top">
+				<w:module type="<?php echo $wrightGridMode; ?>" name="grid-top" chrome="wrightflexgrid" />
 			</div>
-			<div class="grid_12"><w:footer /></div>
-		</div><!-- #footer -->
-	</div>
+			<?php
+				endif;
+			?>
+			<?php
+				if ($this->countModules('grid-top2'))
+					:
+			?>
+			<!-- grid-top2 -->
+			<div id="grid-top2">
+				<w:module type="<?php echo $wrightGridMode; ?>" name="grid-top2" chrome="wrightflexgrid" />
+			</div>
+			<?php
+				endif;
+			?>
+			<div id="main-content" class="<?php echo $wrightGridMode; ?>">
+				<!-- sidebar1 -->
+				<aside id="sidebar1">
+					<w:module name="sidebar1" />
+				</aside>
+				<!-- main -->
+				<section id="main">
+					<?php
+						if ($this->countModules('above-content'))
+							:
+					?>
+					<!-- above-content -->
+					<div id="above-content">
+						<w:module type="none" name="above-content" />
+					</div>
+					<?php
+						endif;
+					?>
+					<?php
+						if ($this->countModules('breadcrumbs'))
+							:
+					?>
+					<!-- breadcrumbs -->
+					<div id="breadcrumbs">
+						<w:module name="breadcrumbs" chrome="none" />
+					</div>
+					<?php
+						endif;
+					?>
+					<!-- component -->
+					<w:content />
+					<?php
+						if ($this->countModules('below-content'))
+							:
+					?>
+					<!-- below-content -->
+					<div id="below-content">
+						<w:module type="none" name="below-content" />
+					</div>
+					<?php
+						endif;
+					?>
+				</section>
+				<!-- sidebar2 -->
+				<aside id="sidebar2">
+					<w:module name="sidebar2" />
+				</aside>
+			</div>
+			<?php
+				if ($this->countModules('grid-bottom'))
+					:
+			?>
+			<!-- grid-bottom -->
+			<div id="grid-bottom" >
+				<w:module type="<?php echo $wrightGridMode; ?>" name="grid-bottom" chrome="wrightflexgrid" />
+			</div>
+			<?php
+				endif;
+			?>
+			<?php
+				if ($this->countModules('grid-bottom2'))
+					:
+			?>
+			<!-- grid-bottom2 -->
+			<div id="grid-bottom2" >
+				<w:module type="<?php echo $wrightGridMode; ?>" name="grid-bottom2" chrome="wrightflexgrid" />
+			</div>
+			<?php
+				endif;
+			?>
+		</div>
 
-	<w:module name="debug" chrome="none" />
+		<!-- footer -->
+		<div class="wrapper-footer">
+		   <footer id="footer" <?php
+			if ($this->params->get('stickyFooter', 1))
+				:
+				?> class="sticky"<?php
+			endif;
+				?>>
+
+				<?php
+					if ($this->countModules('bottom-menu'))
+					:
+				?>
+				<!-- bottom-menu -->
+				<w:nav containerClass="<?php echo $wrightContainerClass ?>" rowClass="<?php echo $wrightGridMode ?>" name="bottom-menu" wrapClass="navbar-inverse navbar-transparent" />
+				<?php
+					endif;
+				?>
+
+		   	<div class="<?php echo $wrightContainerClass; ?> footer-content">
+			   	<?php
+						if ($this->countModules('footer'))
+						:
+					?>
+					<w:module type="<?php echo $wrightGridMode; ?>" name="footer" chrome="wrightflexgrid" />
+				 	<?php
+						endif;
+					?>
+					<w:footer />
+				</div>
+		   </footer>
+		</div>
+    <w:module type="none" name="debug" chrome="none" />
 	</body>
-	</html>
+</html>
