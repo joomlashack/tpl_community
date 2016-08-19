@@ -38,26 +38,28 @@ defined('_JEXEC') or die('Restricted access');
 					<div class="clear"></div>
 				</div>
 			</header>
-			<?php
-				if ($this->countModules('menu'))
-					:
-			?>
-			<!-- menu -->
-	   		<w:nav name="menu" />
-			<?php
-				endif;
-			?>
-			<!-- featured -->
-			<?php
-				if ($this->countModules('featured'))
-					:
-			?>
-			<div id="featured">
-				<w:module type="none" name="featured" />
-			</div>
-			<?php
-				endif;
-			?>
+		</div>
+        <?php
+        if ($this->countModules('menu'))
+            :
+            ?>
+            <!-- menu -->
+            <w:nav name="menu" containerClass="<?php echo $wrightContainerClass; ?>" />
+        <?php
+        endif;
+        ?>
+        <!-- featured -->
+        <?php
+        if ($this->countModules('featured'))
+            :
+            ?>
+            <div id="featured">
+                <w:module type="none" name="featured" />
+            </div>
+        <?php
+        endif;
+        ?>
+        <div class="<?php echo $wrightContainerClass; ?>">
 			<!-- grid-top -->
 			<?php
 				if ($this->countModules('grid-top'))
