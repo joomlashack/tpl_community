@@ -1,5 +1,32 @@
 @import 'https://fonts.googleapis.com/css?family=Arimo:400,400i,700';
 
+/* General
+ ========================================================================== */
+
+p {
+	margin-bottom: 20px;
+}
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+	.box-shadow(none);
+	.border-radius(0);
+}
+
 /* Bootstrap
  ========================================================================== */
 
@@ -19,6 +46,9 @@
 	margin-top: 30px;
 }
 
+/* Menu
+ ========================================================================== */
+
 .wrapper-menu {
 	background: @color_two;
 
@@ -28,10 +58,86 @@
 		.navbar {
 			margin-bottom: 0;
 		}
+
+		form {
+			margin: 0;
+			position: relative;
+
+			&:after {
+				font-family: FontAwesome;
+				content: '\f002';
+				position: absolute;
+				color: @color_two;
+				right: 14px;
+				top: 20px;
+				font-size: 20px;
+			}
+		}
+
+		input.search-query {
+			border: none;
+			padding: 20px 40px 20px 14px;
+			color: @color_one;
+			width: 176px;
+			background: rgba(255, 255, 255, 0.9);
+			.box-shadow(none);
+
+			&:focus {
+				color: @grayDark;
+			}
+		}
+	}
+
+	+ .container {
+		margin-top: 30px;
 	}
 }
 
-.wrapper-menu,
+.btn {
+	text-shadow: none;
+	border: none;
+	.box-shadow(none);
+}
+
+/* Featured
+ ========================================================================== */
+
+#featured {
+	background-position: top center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url(../images/featured-disabled.jpg);
+	background-color: @grayLighter;
+
+	> .container,
+	> .container-fluid {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	#login-form {
+		padding: 30px;
+		background: rgba(255, 255, 255, 0.9);
+		margin-bottom: 0;
+		margin-top: 20px;
+		max-width: 220px;
+		float: right;
+
+		.userdata .input-prepend input {
+			width: 130px;
+		}
+
+		ul.nav-tabs {
+			margin-bottom: 0;
+		}
+	}
+
+	h1 {
+		font-size: 50px;
+		line-height: 54px;
+	}
+}
+
 #header,
 #featured,
 #grid-top,

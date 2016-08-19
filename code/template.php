@@ -44,7 +44,7 @@ defined('_JEXEC') or die('Restricted access');
             :
             ?>
             <!-- menu -->
-            <w:nav name="menu" containerClass="<?php echo $wrightContainerClass; ?>" />
+            <w:nav containerClass="<?php echo $wrightContainerClass ?>" rowClass="<?php echo $wrightGridMode ?>" type="menu" name="menu" />
         <?php
         endif;
         ?>
@@ -54,7 +54,9 @@ defined('_JEXEC') or die('Restricted access');
             :
             ?>
             <div id="featured">
-                <w:module type="none" name="featured" />
+                <div class="<?php echo $wrightContainerClass; ?>">
+                    <w:module type="<?php echo $wrightGridMode; ?>" name="featured" chrome="wrightflexgrid" />
+                </div>
             </div>
         <?php
         endif;
