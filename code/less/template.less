@@ -92,6 +92,10 @@ input[type="color"],
 	}
 }
 
+.navbar-inner {
+	.box-shadow(none);
+}
+
 /* Header
  ========================================================================== */
 
@@ -202,7 +206,7 @@ input[type="color"],
 
 	#login-form {
 		padding: 20px;
-		background: rgba(255, 255, 255, 0.9);
+		background: @white;
 		margin-bottom: 0;
 		max-width: 240px;
 		float: right;
@@ -216,7 +220,8 @@ input[type="color"],
 			width: 137px;
 			height: 30px;
 			padding-left: 10px;
-			border-color: @white;
+			border-color: #f2f2f2;
+			background: #f2f2f2;
 
 			&:focus {
 				.box-shadow(none);
