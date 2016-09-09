@@ -9,3 +9,11 @@
 
 // No direct access
 defined('_JEXEC') or die('Restricted access');
+
+$document       = JFactory::getDocument();
+$featuredImage  = $this->params->get('featuredImage', '');
+
+if($featuredImage) {
+    $style = '#featured{background-image: url(' . Juri::base() . $featuredImage . ');}';
+    $document->addStyleDeclaration($style);
+}

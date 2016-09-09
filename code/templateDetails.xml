@@ -115,6 +115,9 @@
 				</field>
                 <!-- End of default Wright params -->
 			</fieldset>
+            <fieldset name="Community" label="TPL_JS_COMMUNITY_OPTIONS">
+                <field name="featuredImage" type="media" label="TPL_JS_COMMUNITY_BACKGROUND_IMAGE" description="TPL_JS_COMMUNITY_BACKGROUND_IMAGE_DESC" />
+            </fieldset>
 		</fields>
 	</config>
 </extension>
