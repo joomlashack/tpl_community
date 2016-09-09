@@ -28,6 +28,10 @@ p {
 	margin-bottom: 20px;
 }
 
+a {
+	.transition(all 0.2s linear 0s);
+}
+
 textarea,
 input[type="text"],
 input[type="password"],
@@ -283,11 +287,17 @@ input[type="color"],
 		background-size: 50px auto;
 		background-color: @color_one;
 		margin: 0 20px 20px;
+		overflow: hidden;
 
 		a img {
 			.transition(all 0.4s ease-in-out 0s);
+
 			&:hover {
-				opacity: 0.5;
+				opacity: 0.6;
+				-o-transform: scale(1.1);
+				-webkit-transform: scale(1.1);
+				-moz-transform: scale(1.1);
+				transform: scale(1.1);
 			}
 		}
 	}
