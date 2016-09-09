@@ -3,6 +3,19 @@
 /* General
  ========================================================================== */
 
+h1,
+h2,
+h3 {
+
+	a {
+
+		&:hover,
+		&:focus {
+			text-decoration: none;
+		}
+	}
+}
+
 p {
 	margin-bottom: 20px;
 }
@@ -56,6 +69,14 @@ input[type="color"],
 
 	[class*="icon-"] {
 		color: @white;
+	}
+}
+
+.nav > li > a {
+
+	&:hover,
+	&:focus {
+
 	}
 }
 
@@ -203,4 +224,71 @@ input[type="color"],
 #grid-bottom2,
 #bottom-menu {
 	margin-bottom: 30px;
+}
+
+/* Articles
+ ========================================================================== */
+
+.blog-featured {
+
+	.item-image {
+		margin: 0 20px 20px;
+
+		img {
+
+
+			&:hover {
+
+			}
+		}
+	}
+
+	.items-leading [class*="leading-"],
+	.items-row .item {
+		background: @white;
+		margin-bottom: 20px;
+		border: 1px solid #f2f2f2;
+
+		.article-content {
+			padding: 20px;
+
+			+ .article-content {
+				padding-top: 0;
+			}
+
+			.item-title {
+				margin: 0;
+				font-weight: 400;
+			}
+
+			p:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.cols-3,
+	.cols-4,
+	.cols-5,
+	.cols-6 {
+		.pull-left,
+		.pull-right {
+			&.item-image {
+				margin-left: 0;
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+dl.article-info dd {
+
+	&:hover,
+	&>div:hover{
+		background: none;
+	}
+
+	&:first-of-type {
+		padding-left: 0;
+	}
 }
