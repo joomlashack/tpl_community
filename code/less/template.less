@@ -25,6 +25,7 @@ input[type="color"],
 .uneditable-input {
 	.box-shadow(none);
 	.border-radius(0);
+	border-color: @gray;
 }
 
 /* Bootstrap
@@ -37,6 +38,25 @@ input[type="color"],
 
 .navbar .nav > li > a {
 	text-shadow: none;
+}
+
+.nav-tabs.nav-stacked > li {
+
+	&:first-child > a,
+	&:last-child > a {
+		.border-radius(0);
+	}
+}
+
+.input-append .add-on,
+.input-prepend .add-on {
+	text-shadow: none;
+	background-color: @gray;
+	border-color: @gray;
+
+	[class*="icon-"] {
+		color: @white;
+	}
 }
 
 /* Header
@@ -98,6 +118,12 @@ input[type="color"],
 	text-shadow: none;
 	border: none;
 	.box-shadow(none);
+	color: @white;
+
+	&:hover,
+	&:focus {
+		color: @white;
+	}
 }
 
 /* Featured
@@ -117,18 +143,48 @@ input[type="color"],
 	}
 
 	#login-form {
-		padding: 30px;
+		padding: 20px;
 		background: rgba(255, 255, 255, 0.9);
 		margin-bottom: 0;
-		max-width: 220px;
+		max-width: 240px;
 		float: right;
 
+		#form-login-remember .control-label {
+			font-size: 13px;
+			color: @gray;
+		}
+
 		.userdata .input-prepend input {
-			width: 130px;
+			width: 137px;
+			height: 30px;
+			padding-left: 10px;
+		}
+
+		.input-append,
+		.input-prepend {
+
+			.add-on {
+				height: 30px;
+				line-height: 30px;
+				width: 25px;
+			}
 		}
 
 		ul.nav-tabs {
 			margin-bottom: 0;
+			margin-top: 30px;
+
+			&.nav-stacked > li > a {
+				border: none;
+				font-size: 13px;
+				line-height: 17px;
+				padding: 5px 0 0;
+
+				&:hover,
+				&:focus {
+					background: none;
+				}
+			}
 		}
 	}
 

@@ -32,8 +32,9 @@
 
 // Global values
 // --------------------------------------------------
-@color_one: #1e5d74;
-@color_two: #1598c4;
+@color_one: 	#1e5d74;
+@color_two: 	#1598c4;
+@color_three: 	#15C69A;
 
 // Grays
 // -------------------------
@@ -66,8 +67,8 @@
 
 // Links
 // -------------------------
-@linkColor:             @color_one;
-@linkColorHover:        lighten(@linkColor, 15%);
+@linkColor:             @color_two;
+@linkColorHover:        lighten(@linkColor, 5%);
 
 
 // Typography
@@ -112,12 +113,12 @@
 
 // Buttons
 // -------------------------
-@btnBackground:                     @white;
-@btnBackgroundHighlight:            darken(@white, 10%);
-@btnBorder:                         #ccc;
+@btnBackground:                     @color_two;
+@btnBackgroundHighlight:            darken(@color_two, 5%);
+@btnBorder:                         transparent;
 
-@btnPrimaryBackground:              @color_two;
-@btnPrimaryBackgroundHighlight:     @color_two;
+@btnPrimaryBackground:              @color_three;
+@btnPrimaryBackgroundHighlight:     darken(@color_three, 5%);
 
 @btnInfoBackground:                 #5bc0de;
 @btnInfoBackgroundHighlight:        #2f96b4;
