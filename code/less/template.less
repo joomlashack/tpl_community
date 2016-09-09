@@ -5,7 +5,11 @@
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 400;
 
 	a {
 
@@ -13,6 +17,10 @@ h3 {
 		&:focus {
 			text-decoration: none;
 		}
+	}
+
+	small {
+		color: inherit;
 	}
 }
 
@@ -147,6 +155,26 @@ input[type="color"],
 	}
 }
 
+/* Below Content
+ ========================================================================== */
+
+#below-content {
+	margin-bottom: 5px;
+}
+
+/* Grid Bottom 2
+ ========================================================================== */
+
+#grid-bottom2 {
+	background: @grayLighter;
+	margin-bottom: 0;
+	padding-top: 20px;
+
+	#easy-social-icons {
+		margin-top: 10px;
+	}
+}
+
 /* Featured
  ========================================================================== */
 
@@ -184,6 +212,11 @@ input[type="color"],
 			width: 137px;
 			height: 30px;
 			padding-left: 10px;
+			border-color: @white;
+
+			&:focus {
+				.box-shadow(none);
+			}
 		}
 
 		.input-append,
@@ -226,8 +259,8 @@ input[type="color"],
 #main-content,
 #breadcrumbs,
 #grid-bottom,
-#grid-bottom2,
-#bottom-menu {
+#bottom-menu,
+#above-content {
 	margin-bottom: 30px;
 }
 
@@ -274,7 +307,6 @@ input[type="color"],
 
 			.item-title {
 				margin: 0;
-				font-weight: 400;
 			}
 
 			p:last-child {
@@ -307,4 +339,29 @@ dl.article-info dd {
 	&:first-of-type {
 		padding-left: 0;
 	}
+}
+
+/* Modules
+ ========================================================================== */
+
+.moduletable_box,
+.module_box {
+	padding: 40px;
+	background: @white;
+	border: 1px solid #f2f2f2;
+}
+
+.moduletable_box_inverted,
+.module_box_inverted {
+	padding: 40px;
+	background: @gray;
+	border: 1px solid @gray;
+	color: @white;
+}
+
+/* Custom
+ ========================================================================== */
+
+.icon-heart:before {
+	color: #ff0000;
 }

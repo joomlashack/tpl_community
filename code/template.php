@@ -143,18 +143,22 @@ defined('_JEXEC') or die('Restricted access');
 			<?php
 				endif;
 			?>
-			<?php
-				if ($this->countModules('grid-bottom2'))
-					:
-			?>
-			<!-- grid-bottom2 -->
-			<div id="grid-bottom2" >
-				<w:module type="<?php echo $wrightGridMode; ?>" name="grid-bottom2" chrome="wrightflexgrid" />
-			</div>
-			<?php
-				endif;
-			?>
-		</div>
+        </div>
+
+        <?php
+            if ($this->countModules('grid-bottom2'))
+                :
+        ?>
+        <!-- grid-bottom2 -->
+        <div id="grid-bottom2" >
+            <div class="<?php echo $wrightContainerClass; ?>">
+                <w:module type="<?php echo $wrightGridMode; ?>" name="grid-bottom2" chrome="wrightflexgrid" />
+            </div>
+        </div>
+        <?php
+            endif;
+        ?>
+
 
 		<!-- footer -->
 		<div class="wrapper-footer">
