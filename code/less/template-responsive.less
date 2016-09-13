@@ -64,6 +64,10 @@
 		form:after {
 			left: 185px;
 		}
+	}
+
+	#toolbar,
+	#menu {
 
 		.navbar-inner {
 			.box-shadow(none);
@@ -75,6 +79,7 @@
 			.btn-navbar {
 				border: 1px solid @white;
 				.box-shadow(none);
+				background: transparent;
 			}
 		}
 	}
@@ -104,6 +109,23 @@
 		[class*="span"] {
 			margin-left: 20px;
 			margin-right: 20px;
+		}
+	}
+
+	#sidebar1,
+	#sidebar2,
+	#grid-top,
+	#grid-top2,
+	#grid-bottom,
+	#grid-bottom2,
+	#footer {
+
+		[class*="module"] {
+			margin-bottom: 20px;
+
+			&:last-of-type {
+				margin-bottom: 0;
+			}
 		}
 	}
 }

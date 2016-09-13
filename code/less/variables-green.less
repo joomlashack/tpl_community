@@ -225,15 +225,15 @@
 
 // Inverted navbar
 @navbarInverseBackground:                @color_two;
-@navbarInverseBackgroundHighlight:       @color_one;
-@navbarInverseBorder:                    transparent;
+@navbarInverseBackgroundHighlight:       @color_two;
+@navbarInverseBorder:                    @color_two;
 
-@navbarInverseText:                      @grayLight;
+@navbarInverseText:                      @white;
 @navbarInverseLinkColor:                 @white;
 @navbarInverseLinkColorHover:            @white;
 @navbarInverseLinkColorActive:           @navbarInverseLinkColorHover;
-@navbarInverseLinkBackgroundHover:       @color_two;
-@navbarInverseLinkBackgroundActive:      @navbarInverseBackground;
+@navbarInverseLinkBackgroundHover:       darken(@color_one, 8%);
+@navbarInverseLinkBackgroundActive:      @navbarInverseLinkBackgroundHover;
 
 @navbarInverseSearchBackground:          lighten(@navbarInverseBackground, 25%);
 @navbarInverseSearchBackgroundFocus:     @white;

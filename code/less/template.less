@@ -92,11 +92,31 @@ input[type="color"],
 	}
 }
 
+.label,
+.badge {
+	text-shadow: none;
+}
+
+.badge {
+	background: @grayDark;
+}
+
 /* Header
  ========================================================================== */
 
 #header {
 	margin-top: 30px;
+}
+
+/* Toolbar
+ ========================================================================== */
+
+#toolbar {
+	margin-bottom: 15px;
+
+	.navbar-inner {
+		border: none;
+	}
 }
 
 /* Main Menu
@@ -176,16 +196,32 @@ input[type="color"],
 	margin-bottom: 5px;
 }
 
-/* Grid Bottom 2
+/* Grid Top 2 / Grid Bottom 2
  ========================================================================== */
 
+#grid-top2,
 #grid-bottom2 {
 	background: @grayLighter;
 	margin-bottom: 0;
-	padding-top: 20px;
+	padding: 30px 0;
 
 	#easy-social-icons {
 		margin-top: 10px;
+	}
+}
+
+/* Footer
+ ========================================================================== */
+
+#footer {
+
+	.footer-content {
+		padding: 30px 0;
+	}
+
+	a.joomlashack,
+	div.joomlashack {
+		margin-top: 0;
 	}
 }
 
@@ -200,8 +236,21 @@ input[type="color"],
 	background-color: @grayLighter;
 	min-height: 500px;
 
+	h3,
 	.custom {
 		color: @white;
+	}
+
+	.hero-unit {
+		.border-radius(0);
+
+		.custom {
+			color: inherit;
+		}
+
+		h3 {
+			color: inherit;
+		}
 	}
 
 	> .container,
@@ -271,6 +320,7 @@ input[type="color"],
 #header,
 #featured,
 #grid-top,
+#grid-top2,
 #main-content,
 #breadcrumbs,
 #grid-bottom,
@@ -404,19 +454,51 @@ dl.article-info {
 /* Modules
  ========================================================================== */
 
-.moduletable_box,
-.module_box {
+[class*="module"],
+[class*="moduletable"] {
+
+	> h3 {
+		margin-top: 0;
+	}
+}
+
+.moduletable-box,
+.module-box {
 	padding: 40px;
 	background: @white;
 	border: 1px solid #f2f2f2;
 }
 
-.moduletable_box_inverted,
-.module_box_inverted {
+.moduletable-box-facebook,
+.module-box-facebook {
 	padding: 40px;
-	background: @gray;
-	border: 1px solid @gray;
+	background: #365899;
+	border: 1px solid #365899;
 	color: @white;
+
+	.badge {
+		background: @white;
+		color: #365899;
+	}
+}
+
+.moduletable-box-twitter,
+.module-box-twitter {
+	padding: 40px;
+	background: #1da1f2;
+	border: 1px solid #1da1f2;
+	color: @white;
+
+	.badge {
+		background: @white;
+		color: #1da1f2;
+	}
+}
+
+.moduletable-box-transparent,
+.module-box-transparent {
+	padding: 40px;
+	border: 1px solid transparent;
 }
 
 /* Custom

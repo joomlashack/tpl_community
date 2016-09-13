@@ -55,7 +55,7 @@ defined('_JEXEC') or die('Restricted access');
             ?>
             <div id="featured">
                 <div class="<?php echo $wrightContainerClass; ?>">
-                    <w:module type="<?php echo $wrightGridMode; ?>" name="featured" chrome="wrightflexgrid" />
+                    <w:module type="row-fluid" name="featured" chrome="wrightflexgrid" />
                 </div>
             </div>
         <?php
@@ -68,22 +68,28 @@ defined('_JEXEC') or die('Restricted access');
 					:
 			?>
 			<div id="grid-top">
-				<w:module type="<?php echo $wrightGridMode; ?>" name="grid-top" chrome="wrightflexgrid" />
+				<w:module type="row-fluid" name="grid-top" chrome="wrightflexgrid" />
 			</div>
 			<?php
 				endif;
 			?>
-			<?php
-				if ($this->countModules('grid-top2'))
-					:
-			?>
-			<!-- grid-top2 -->
-			<div id="grid-top2">
-				<w:module type="<?php echo $wrightGridMode; ?>" name="grid-top2" chrome="wrightflexgrid" />
-			</div>
-			<?php
-				endif;
-			?>
+        </div>
+
+        <?php
+            if ($this->countModules('grid-top2'))
+                :
+        ?>
+        <!-- grid-top2 -->
+        <div id="grid-top2">
+            <div class="<?php echo $wrightContainerClass; ?>">
+                <w:module type="row-fluid" name="grid-top2" chrome="wrightflexgrid" />
+            </div>
+        </div>
+        <?php
+            endif;
+        ?>
+
+        <div class="<?php echo $wrightContainerClass; ?>">
 			<div id="main-content" class="<?php echo $wrightGridMode; ?>">
 				<!-- sidebar1 -->
 				<aside id="sidebar1">
@@ -138,7 +144,7 @@ defined('_JEXEC') or die('Restricted access');
 			?>
 			<!-- grid-bottom -->
 			<div id="grid-bottom" >
-				<w:module type="<?php echo $wrightGridMode; ?>" name="grid-bottom" chrome="wrightflexgrid" />
+				<w:module type="row-fluid" name="grid-bottom" chrome="wrightflexgrid" />
 			</div>
 			<?php
 				endif;
@@ -152,7 +158,7 @@ defined('_JEXEC') or die('Restricted access');
         <!-- grid-bottom2 -->
         <div id="grid-bottom2" >
             <div class="<?php echo $wrightContainerClass; ?>">
-                <w:module type="<?php echo $wrightGridMode; ?>" name="grid-bottom2" chrome="wrightflexgrid" />
+                <w:module type="row-fluid" name="grid-bottom2" chrome="wrightflexgrid" />
             </div>
         </div>
         <?php
@@ -184,7 +190,7 @@ defined('_JEXEC') or die('Restricted access');
 						if ($this->countModules('footer'))
 						:
 					?>
-					<w:module type="<?php echo $wrightGridMode; ?>" name="footer" chrome="wrightflexgrid" />
+					<w:module type="row-fluid" name="footer" chrome="wrightflexgrid" />
 				 	<?php
 						endif;
 					?>
