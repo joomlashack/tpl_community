@@ -284,6 +284,27 @@ p.readmore {
 	}
 }
 
+.pagination {
+	display: block;
+	text-align: left;
+
+	.counter {
+		margin-right: 0;
+	}
+}
+
+.items-more {
+
+	h3 {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.nav-tabs.nav-stacked > li > a {
+		background-color: @white;
+	}
+}
+
 .item-page {
 
 	.item-image {
@@ -354,15 +375,19 @@ p.readmore {
 	}
 }
 
-dl.article-info dd {
+dl.article-info {
+	color: @gray;
 
-	&:hover,
-	&>div:hover{
-		background: none;
-	}
+	dd {
 
-	&:first-of-type {
-		padding-left: 0;
+		&:first-of-type {
+			padding-left: 0;
+		}
+
+		&:hover,
+		> div:hover {
+			background-color: transparent;
+		}
 	}
 }
 
