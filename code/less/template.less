@@ -276,6 +276,14 @@ input[type="color"],
 /* Articles
  ========================================================================== */
 
+p.readmore {
+	float: none;
+
+	a > .icon-chevron-right {
+		display: none;
+	}
+}
+
 .item-page {
 
 	.item-image {
@@ -313,6 +321,7 @@ input[type="color"],
 		background: @white;
 		margin-bottom: 20px;
 		border: 1px solid #f2f2f2;
+		display: table;
 
 		.article-content {
 			padding: 20px;
@@ -321,7 +330,7 @@ input[type="color"],
 				padding-top: 0;
 			}
 
-			.item-title {
+			h2 {
 				margin: 0;
 			}
 
