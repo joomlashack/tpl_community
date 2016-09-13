@@ -55,11 +55,27 @@
 
 @media (max-width: 979px) {
 
-	#menu .search.pull-right {
-		float: none;
+	#menu {
+
+		.search.pull-right {
+			float: none;
+		}
 
 		form:after {
 			left: 185px;
+		}
+
+		.navbar-inner {
+			.box-shadow(none);
+			padding: 0;
+		}
+
+		.navbar {
+
+			.btn-navbar {
+				border: 1px solid @white;
+				.box-shadow(none);
+			}
 		}
 	}
 
