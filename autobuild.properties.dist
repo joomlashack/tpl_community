@@ -1,2 +1,2 @@
 www.dir=/var/www/community
-node.skip=false
+node.build=all

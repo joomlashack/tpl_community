@@ -1,25 +1,19 @@
 <?php
 /**
  * @package     Community
- * @subpackage  Functions
+ * @subpackage  Template File
  *
- * @copyright   Copyright (C) 2005 - 2014 Joomlashack. Meritage Assets.  All rights reserved.
+ * @copyright   Copyright (C) 2005 - 2016 Joomlashack. Meritage Assets.  All rights reserved.
  * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */
 
-// Restrict Access to within Joomla
+// No direct access
 defined('_JEXEC') or die('Restricted access');
 
-define( 'YOURBASEPATH', dirname(__FILE__) );
+$document       = JFactory::getDocument();
+$featuredImage  = $this->params->get('featuredImage', '');
 
-$app = JFactory::getApplication();
-
-$headline			= $this->params->get("headline");
-$slogan				= $this->params->get("slogan");
-$headerstyle		= $this->params->get("logo", "text");
-$logogridsize		= $this->params->get("logowidth");
-$logoheight			= $this->params->get("logoheight");
-
-class WrightTemplate extends WrightTemplateBase {
-	public $suffixes = true;  // allows stacked suffixes
+if($featuredImage) {
+    $style = '#featured{background-image: url(' . Juri::base() . $featuredImage . ');}';
+    $document->addStyleDeclaration($style);
 }

@@ -2,75 +2,121 @@
 <!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.5/template-install.dtd">
 <extension version="2.5" type="template" method="upgrade" client="site">
 	<name>js_community</name>
-	<creationDate>January 2014</creationDate>
+	<creationDate>August 2016</creationDate>
 	<author>Joomlashack</author>
-	<authorEmail>help@joomlashack.com</authorEmail>
+	<authorEmail>support@joomlashack.com</authorEmail>
 	<authorUrl>http://www.joomlashack.com</authorUrl>
-	<copyright>Copyright Joomlashck 2012 - 2014. All rights reserved</copyright>
-	<license>Commercial license - single domain use only</license>
-	<version>3.0.3</version>
-    <description>
-			<![CDATA[
-			<h2>JS Community</h2>
-<p>Thanks for installing JS Community from Joomlashack!</p>
-			]]> 	
-    </description>
+	<copyright>Copyright Joomlashack 2010 - 2016. All rights reserved</copyright>
+	<license>GNU GPLv2</license>
+	<version>4.0.0_beta</version>
+    <description>TPL_JS_COMMUNITY_XML_DESCRIPTION</description>
+
+	<languages folder="language">
+		<!-- en-GB -->
+		<language tag="en-GB">en-GB/en-GB.tpl_js_community.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_js_community.sys.ini</language>
+		<!-- es-ES -->
+		<language tag="es-ES">es-ES/es-ES.tpl_js_community.ini</language>
+		<language tag="es-ES">es-ES/es-ES.tpl_js_community.sys.ini</language>
+	</languages>
+
 	<files>
 		<filename>component.php</filename>
 		<filename>favicon.ico</filename>
 		<filename>functions.php</filename>
 		<filename>index.php</filename>
-		<filename>index.html</filename>
-		<filename>params.ini</filename>
 		<filename>template.php</filename>
 		<filename>templateDetails.xml</filename>
 		<filename>template_thumbnail.png</filename>
-		<folder>css/</folder>
-		<folder>html/</folder>
-		<folder>js/</folder>
-		<folder>images/</folder>
-		<folder>wright/</folder>
-</files>
+		<filename>wrighttemplate.php</filename>
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>less</folder>
+		<folder>wright</folder>
+	</files>
+
 	<positions>
-		<position>menu</position>
+		<position>toolbar</position>
 		<position>logo</position>
-		<position>newsflash</position>
+		<position>top</position>
+		<position>menu</position>
+		<position>featured</position>
+		<position>grid-top</position>
+		<position>grid-top2</position>
+		<position>above-content</position>
+		<position>breadcrumbs</position>
 		<position>sidebar1</position>
 		<position>sidebar2</position>
-		<position>grid-top</position>
-		<position>above-content</position>
 		<position>below-content</position>
 		<position>grid-bottom</position>
+		<position>grid-bottom2</position>
+		<position>bottom-menu</position>
 		<position>footer</position>
 		<position>debug</position>
-		<position>breadcrumb</position>
 	</positions>
+
 	<config>
 		<fields name="params" addfieldpath="/templates/js_community/wright/parameters/joomla_2.5">
 			<fieldset name="basic">
                 <!-- Start of default Wright params -->
-				<field name="helper" type="help" label="Need Help?" />
-				<field name="rebrand" type="rebrand" default="no" label="Remove Branding" description="This setting removes the branding from the footer of the template." />
-				<field name="style" type="styles" default="brown" label="Style" description="Select which of the style variations you wish to use." />
-				<field name="mootools" type="radio" default="1" label="Enable Mootools" description="Turn off Joomla core Mootools.js">
-					<option value="0">NO</option>
-					<option value="1">YES</option>
+				<field name="wright" type="wright"/>
+				<field name="rebrand" type="radio" class="btn-group btn-group-yesno" default="0" label="TPL_JS_WRIGHT_FIELD_REMOVE_BRANDING_LABEL" description="TPL_JS_WRIGHT_FIELD_REMOVE_BRANDING_DESC">
+				    <option value="1">JYES</option>
+				    <option value="0">JNO</option>
+ 				</field>
+				<field name="style" type="styles" default="blue" label="TPL_JS_WRIGHT_FIELD_STYLE_LABEL" description="TPL_JS_WRIGHT_FIELD_STYLE_DESC" />
+				<field name="lesscompile" type="radio" class="btn-group btn-group-yesno" default="0" label="TPL_JS_WRIGHT_LESS_COMPILE" description="TPL_JS_WRIGHT_LESS_COMPILE_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
 				</field>
-				<field name="logo" type="logo" default="template" label="Logo Image" description="You can select your logo from the images directory after you upload the image." />
-				<field name="logowidth" type="grid" default="6" label="Logo Width" description="Select the column width for the logo, the rest of the space will be given to the newsflash module, or if you set it to full width the module will dissapear" />
-				<field name="body_font" type="typography" default="default" label="Body Font" description="Select the default font face for the body" />
-				<field name="header_font" type="typography" default="default" label="Heading Font" description="Select the default font face for the headers" />
-				<field name="columns" type="columns" default="sidebar1:3;main:6;sidebar2:3" sidebars="2" label="Columns" description="You can set the default widths and arrange the main columns. Any columns that are unused will just be hidden and the main column will be widened." />
-				<field name="doctype" type="list" default="html5" label="Doctype" description="">
-					<option value="html5">HTML5</option>
-					<option value="xhtml1transitional">XHTML 1 Transitional</option>
-					<option value="xhtml1strict">XHTML 1 Strict</option>
+				<field name="modal" type="radio" class="btn-group btn-group-yesno" default="1" label="TPL_JS_WRIGHT_FIELD_ENABLE_MODAL_LABEL" description="TPL_JS_WRIGHT_FIELD_ENABLE_MODAL_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="jquery" type="radio" class="btn-group btn-group-yesno" default="1" label="TPL_JS_WRIGHT_FIELD_LOAD_JQUERY_LABEL" description="TPL_JS_WRIGHT_FIELD_LOAD_JQUERY_DESC">
+					<option value="0">JNO</option>
+					<option value="1">TPL_JS_WRIGHT_FIELD_LOAD_JQUERY_YES_LOCALLY</option>
+					<option value="2">TPL_JS_WRIGHT_FIELD_LOAD_JQUERY_YES_GOOGLE</option>
+				</field>
+				<field name="javascriptBottom" type="radio" class="btn-group btn-group-yesno" default="1" label="TPL_JS_WRIGHT_FIELD_JAVASCRIPT_BOTTOM" description="TPL_JS_WRIGHT_FIELD_JAVASCRIPT_BOTTOM_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="logo" type="logo" default="template" label="TPL_JS_WRIGHT_FIELD_LOGO_IMAGE_LABEL" description="TPL_JS_WRIGHT_FIELD_LOGO_IMAGE_DESC" />
+				<field name="logowidth" type="grid" default="3" label="TPL_JS_WRIGHT_FIELD_LOGO_WIDTH_LABEL" description="TPL_JS_WRIGHT_FIELD_LOGO_WIDTH_DESC" />
+				<field name="body_font" type="typography" default="default" label="TPL_JS_WRIGHT_FIELD_BODY_FONT_LABEL" description="TPL_JS_WRIGHT_FIELD_BODY_FONT_DESC" />
+				<field name="header_font" type="typography" default="default" label="TPL_JS_WRIGHT_FIELD_HEADING_FONT_LABEL" description="TPL_JS_WRIGHT_FIELD_HEADING_FONT_DESC" />
+				<field name="columns" type="columns" default="sidebar1:3;main:6;sidebar2:3" sidebars="2" label="TPL_JS_WRIGHT_FIELD_COLUMNS_LABEL" description="TPL_JS_WRIGHT_FIELD_COLUMNS_DESC" />
+				<field name="documentationMode" type="radio" class="btn-group btn-group-yesno" default="0" label="TPL_JS_WRIGHT_DOCUMENTATION_MODE" description="TPL_JS_WRIGHT_DOCUMENTATION_MODE_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="bootstrapspacer" label="TPL_JS_WRIGHT_BOOTSTRAP_TITLE_LABEL" description="TPL_JS_WRIGHT_BOOTSTRAP_TITLE_DESC" type="spacer" />
+				<field name="bs_rowmode" type="radio" class="btn-group btn-group-yesno" default="row" label="TPL_JS_WRIGHT_FIELD_BOOTSTRAP_ROW_MODE_LABEL" description="TPL_JS_WRIGHT_FIELD_BOOTSTRAP_ROW_MODE_DESC">
+					<option value="row-fluid">TPL_JS_WRIGHT_FIELD_BOOTSTRAP_ROW_MODE_FLUID</option>
+					<option value="row">TPL_JS_WRIGHT_FIELD_BOOTSTRAP_ROW_MODE_DEFAULT</option>
+				</field>
+				<field name="responsive" type="radio" class="btn-group btn-group-yesno" default="1" label="TPL_JS_WRIGHT_FIELD_ENABLE_RESPONSIVE" description="TPL_JS_WRIGHT_FIELD_ENABLE_RESPONSIVE_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="stickyFooter" type="radio" class="btn-group btn-group-yesno" default="1" label="TPL_JS_WRIGHT_FIELD_STICKY_FOOTER" description="TPL_JS_WRIGHT_FIELD_STICKY_FOOTER_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="wright_bootstrap_images" type="radio" class="btn-group btn-group-yesno" default="" label="TPL_JS_WRIGHT_BOOTSTRAP_IMAGES" description="TPL_JS_WRIGHT_BOOTSTRAP_IMAGES_DESC">
+					<option value="">TPL_JS_WRIGHT_NONE</option>
+					<option value="img-rounded">TPL_JS_WRIGHT_BOOTSTRAP_IMAGES_ROUNDED</option>
+					<option value="img-circle">TPL_JS_WRIGHT_BOOTSTRAP_IMAGES_CIRCLE</option>
+					<option value="img-polaroid">TPL_JS_WRIGHT_BOOTSTRAP_IMAGES_POLAROID</option>
 				</field>
                 <!-- End of default Wright params -->
- 				<field name="headline" type="text" default="Community" size="50" label="Logo text" description="Header text to be displayed or SEO text for image" />
-				<field name="slogan" type="text" default="by Joomlashack" size="50" label="Slogan" description="Slogan text to be displayed or SEO text for image" />
-				<field name="logoheight" type="text" default="100" label="Logo Height" description="Enter your logo image height (ONLY enter numerical value)" size="3" />		
 			</fieldset>
+            <fieldset name="Community" label="TPL_JS_COMMUNITY_OPTIONS">
+                <field name="featuredImage" type="media" label="TPL_JS_COMMUNITY_BACKGROUND_IMAGE" description="TPL_JS_COMMUNITY_BACKGROUND_IMAGE_DESC" />
+            </fieldset>
 		</fields>
 	</config>
 </extension>
