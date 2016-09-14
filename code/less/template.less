@@ -61,8 +61,20 @@ input[type="color"],
 	border: none;
 }
 
-.navbar .nav > li > a {
-	text-shadow: none;
+.navbar .nav {
+
+	&>li > a {
+		text-shadow: none;
+	}
+
+	&>.active {
+
+		&>a,
+		&>a:hover,
+		&>a:focus {
+			.box-shadow(none);
+		}
+	}
 }
 
 .nav-tabs.nav-stacked > li {
