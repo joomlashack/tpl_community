@@ -61,8 +61,20 @@ input[type="color"],
 	border: none;
 }
 
-.navbar .nav > li > a {
-	text-shadow: none;
+.navbar .nav {
+
+	&>li > a {
+		text-shadow: none;
+	}
+
+	&>.active {
+
+		&>a,
+		&>a:hover,
+		&>a:focus {
+			.box-shadow(none);
+		}
+	}
 }
 
 .nav-tabs.nav-stacked > li {
@@ -512,4 +524,13 @@ dl.article-info {
 
 .icon-heart:before {
 	color: #ff0000;
+}
+
+.is_internet.v_11 {
+
+	.blog .items-leading [class*='leading-'],
+	.blog-featured .items-leading [class*='leading-'],
+	.blog .items-row .item, .blog-featured .items-row .item {
+		display: block;
+	}
 }
