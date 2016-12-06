@@ -90,7 +90,7 @@ defined('_JEXEC') or die('Restricted access');
         ?>
 
         <div class="<?php echo $wrightContainerClass; ?>">
-			<div id="main-content" class="<?php echo $wrightGridMode; ?>">
+			<div id="main-content" class="row-fluid">
 				<!-- sidebar1 -->
 				<aside id="sidebar1">
 					<w:module name="sidebar1" />
