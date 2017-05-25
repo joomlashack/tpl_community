@@ -18,7 +18,11 @@ $this->item->wrightElementsStructure = Array(
     "title",
     "icons",
     "article-info",
+    "legendtop",
     "content",
+    "legendbottom",
+    "article-info-below",
+    "article-info-split",
     "/div",
     "image"
 );
