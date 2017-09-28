@@ -9,7 +9,7 @@
         "element-short"  : "js_community",
         "name"           : "Community",
         "client"         : "site",
-        "package-license": "pro",
+        "package-license": "free",
         "target-platform": "3.*"
     },
     "authors"          : [

@@ -139,16 +139,16 @@
     <scriptfile>script.installer.php</scriptfile>
 
     <updateservers>
-        <server type="extension" priority="1" name="Community"><![CDATA[https://deploy.ostraining.com/client/update/pro/stable/tpl_js_community]]></server>
+        <server type="extension" priority="1" name="Community"><![CDATA[https://deploy.ostraining.com/client/update/free/stable/tpl_js_community]]></server>
     </updateservers>
 
-    <variant>PRO</variant>
+    <variant>FREE</variant>
 
     <alledia>
         <element>tpl_js_community</element>
         <namespace>JS_Community</namespace>
         <name>JS Community</name>
-        <license>pro</license>
+        <license>free</license>
         <targetplatform>3.*</targetplatform>
 
         <relatedExtensions>
@@ -162,13 +162,6 @@
                 element="ossystem"
                 publish="true"
                 ordering="first">OSSystem</extension>
-
-            <extension
-                type="plugin"
-                group="system"
-                element="osmylicensesmanager"
-                publish="true"
-                ordering="last">OSMyLicensesManager</extension>
         </relatedExtensions>
 
         <include>AllediaFreeDefaultFiles</include>
