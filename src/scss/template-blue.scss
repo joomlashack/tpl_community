@@ -52,7 +52,7 @@ input[type="color"],
 .uneditable-input {
     @include box-shadow(none);
     @include border-radius(0);
-    //border-color: @gray;
+    border-color: $gray-700;
 }
 
 /* Bootstrap
@@ -90,11 +90,11 @@ input[type="color"],
 .input-append .add-on,
 .input-prepend .add-on {
     text-shadow: none;
-    //background-color: @gray;
-    //border-color: @gray;
+    background-color: $gray-700;
+    border-color: $gray-700;
 
     [class*="icon-"] {
-        //color: @white;
+        color: $white;
     }
 }
 
@@ -112,7 +112,7 @@ input[type="color"],
 }
 
 .badge {
-    //background: @grayDark;
+    background: $gray-800;
 }
 
 /* Header
@@ -137,7 +137,7 @@ input[type="color"],
  ========================================================================== */
 
 .wrapper-menu {
-    //background: @color_two;
+    background: $color-two;
 
     #menu {
         margin-bottom: 0;
@@ -154,7 +154,7 @@ input[type="color"],
                 font-family: FontAwesome;
                 content: '\f002';
                 position: absolute;
-                //color: @color_two;
+                color: $color-two;
                 right: 24px;
                 top: 20px;
                 font-size: 20px;
@@ -164,14 +164,14 @@ input[type="color"],
         input.search-query {
             border: none;
             padding: 20px 46px 20px 24px;
-            //color: @color_two;
+            color: $color-two;
             width: 161px;
             background: rgba(255, 255, 255, 0.9);
             @include box-shadow(none);
             font-size: 17px;
 
             &:focus {
-                //color: @grayDark;
+                color: $gray-800;
             }
         }
     }
@@ -185,11 +185,11 @@ input[type="color"],
     text-shadow: none;
     border: none;
     @include box-shadow(none);
-    //color: @white;
+    color: $white;
 
     &:hover,
     &:focus {
-        //color: @white;
+        color: $white;
     }
 }
 
@@ -215,7 +215,7 @@ input[type="color"],
 
 #grid-top2,
 #grid-bottom2 {
-    //background: @grayLighter;
+    //background: $gray-700Lighter;
     margin-bottom: 0;
     padding: 30px 0;
 
@@ -255,12 +255,12 @@ input[type="color"],
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../images/featured.jpg);
-    //background-color: @grayLighter;
+    background-color: $gray-200;
     min-height: 500px;
 
     h3,
     .custom {
-        //color: @white;
+        color: $white;
     }
 
     .hero-unit {
@@ -283,14 +283,14 @@ input[type="color"],
 
     #login-form {
         padding: 20px;
-        //background: @white;
+        background: $white;
         margin-bottom: 0;
         width: 191px;
         float: right;
 
         #form-login-remember .control-label {
             font-size: 13px;
-            //color: @gray;
+            color: $gray-700;
         }
 
         .userdata .input-prepend input {
@@ -383,7 +383,7 @@ p.readmore {
     }
 
     .nav-tabs.nav-stacked > li > a {
-        //background-color: @white;
+        background-color: $white;
     }
 }
 
@@ -402,7 +402,7 @@ p.readmore {
         background-repeat: no-repeat;
         background-position: center center;
         background-size: 50px auto;
-        //background-color: @color_one;
+        background-color: $color-one;
         margin: 0 20px 20px;
         overflow: hidden;
 
@@ -421,7 +421,7 @@ p.readmore {
 
     .items-leading [class*="leading-"],
     .items-row .item {
-        //background: @white;
+        background: $white;
         margin-bottom: 20px;
         border: 1px solid #f2f2f2;
         display: table;
@@ -460,7 +460,7 @@ p.readmore {
 }
 
 dl.article-info {
-    //color: @gray;
+    color: $gray-700;
 
     dd {
 
@@ -476,7 +476,7 @@ dl.article-info {
 }
 
 .caret {
-    //border-top-color: @white;
+    border-top-color: $white;
 }
 
 /* Modules
@@ -493,7 +493,7 @@ dl.article-info {
 .moduletable-box,
 .module-box {
     padding: 40px;
-    //background: @white;
+    background: $white;
     border: 1px solid #f2f2f2;
 }
 
@@ -502,10 +502,10 @@ dl.article-info {
     padding: 40px;
     background: #365899;
     border: 1px solid #365899;
-    //color: @white;
+    color: $white;
 
     .badge {
-        //background: @white;
+        background: $white;
         color: #365899;
     }
 }
@@ -515,10 +515,10 @@ dl.article-info {
     padding: 40px;
     background: #1da1f2;
     border: 1px solid #1da1f2;
-    //color: @white;
+    color: $white;
 
     .badge {
-        //background: @white;
+        background: $white;
         color: #1da1f2;
     }
 }
@@ -642,7 +642,7 @@ dl.article-info {
         .navbar {
 
             .btn-navbar {
-                //border: 1px solid @white;
+                border: 1px solid $white;
                 @include box-shadow(none);
                 background: transparent;
             }
