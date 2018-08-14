@@ -44,7 +44,7 @@ defined('_JEXEC') or die('Restricted access');
             :
             ?>
             <!-- menu -->
-            <w:nav containerClass="<?php echo $wrightContainerClass ?>" rowClass="<?php echo $wrightGridMode ?>" type="menu" name="menu" />
+            <w:nav containerClass="<?php echo $wrightContainerClass ?>" rowClass="<?php echo $wrightGridMode ?>" wrapClass="<?php echo $mainMenuClasses; ?>" type="menu" name="menu" />
         <?php
         endif;
         ?>
