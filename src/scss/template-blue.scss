@@ -31,7 +31,7 @@ p {
 }
 
 a {
-    //.transition(all 0.2s linear 0s);
+    @include transition(all 0.2s linear 0s);
 }
 
 textarea,
@@ -50,8 +50,8 @@ input[type="search"],
 input[type="tel"],
 input[type="color"],
 .uneditable-input {
-    //.box-shadow(none);
-    //.border-radius(0);
+    @include box-shadow(none);
+    @include border-radius(0);
     //border-color: @gray;
 }
 
@@ -59,7 +59,7 @@ input[type="color"],
  ========================================================================== */
 
 .dropdown-menu {
-    //.border-radius(0);
+    @include border-radius(0);
     border: none;
 }
 
@@ -74,7 +74,7 @@ input[type="color"],
         &>a,
         &>a:hover,
         &>a:focus {
-            //.box-shadow(none);
+            @include box-shadow(none);
         }
     }
 }
@@ -83,7 +83,7 @@ input[type="color"],
 
     &:first-child > a,
     &:last-child > a {
-        //.border-radius(0);
+        @include border-radius(0);
     }
 }
 
@@ -167,7 +167,7 @@ input[type="color"],
             //color: @color_two;
             width: 161px;
             background: rgba(255, 255, 255, 0.9);
-            //.box-shadow(none);
+            @include box-shadow(none);
             font-size: 17px;
 
             &:focus {
@@ -184,7 +184,7 @@ input[type="color"],
 .btn {
     text-shadow: none;
     border: none;
-    //.box-shadow(none);
+    @include box-shadow(none);
     //color: @white;
 
     &:hover,
@@ -264,7 +264,7 @@ input[type="color"],
     }
 
     .hero-unit {
-        //.border-radius(0);
+        @include border-radius(0);
 
         .custom {
             color: inherit;
@@ -301,7 +301,7 @@ input[type="color"],
             background: #f2f2f2;
 
             &:focus {
-                //.box-shadow(none);
+                @include box-shadow(none);
             }
         }
 
@@ -407,7 +407,7 @@ p.readmore {
         overflow: hidden;
 
         a img {
-            //.transition(all 0.4s ease-in-out 0s);
+            @include transition(all 0.4s ease-in-out 0s);
 
             &:hover {
                 opacity: 0.6;
@@ -426,7 +426,7 @@ p.readmore {
         border: 1px solid #f2f2f2;
         display: table;
         width: 100%;
-        //.box-sizing(border-box);
+        //@include box-sizing(border-box);
 
         .article-content {
             padding: 20px;
@@ -569,7 +569,7 @@ dl.article-info {
 
         .navbar .navbar-inner {
             background-image: none;
-            //.box-shadow(none);
+            @include box-shadow(none);
             padding: 0;
             min-height: 60px;
             border: none;
@@ -580,7 +580,7 @@ dl.article-info {
                     & > a,
                     &:hover,
                     &:focus {
-                        //.box-shadow(none);
+                        @include box-shadow(none);
                     }
                 }
 
@@ -598,7 +598,7 @@ dl.article-info {
                     }
 
                     a {
-                        //.transition(all 0.2s linear 0s);
+                        @include transition(all 0.2s linear 0s);
                     }
                 }
             }
@@ -635,7 +635,7 @@ dl.article-info {
     #menu {
 
         .navbar-inner {
-            //.box-shadow(none);
+            @include box-shadow(none);
             padding: 0;
         }
 
@@ -643,7 +643,7 @@ dl.article-info {
 
             .btn-navbar {
                 //border: 1px solid @white;
-                //.box-shadow(none);
+                @include box-shadow(none);
                 background: transparent;
             }
         }
