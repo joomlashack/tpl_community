@@ -426,7 +426,7 @@ p.readmore {
         border: 1px solid #f2f2f2;
         display: table;
         width: 100%;
-        //@include box-sizing(border-box);
+        @include box-sizing(border-box);
 
         .article-content {
             padding: 20px;
