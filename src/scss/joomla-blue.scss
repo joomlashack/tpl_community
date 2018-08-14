@@ -1,0 +1,9 @@
+/* ==== Blue style ====
+ *
+ * The order of these files matter!
+*/
+
+@import "../wright/src/wright/build/scss/beforevars";
+@import "variables-blue";
+@import "../wright/src/wright/build/scss/aftervars";
+@import "template-blue";
