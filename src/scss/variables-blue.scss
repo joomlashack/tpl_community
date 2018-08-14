@@ -72,7 +72,7 @@ $colors: map-merge(
                 $colors
 );
 
-$primary:       $color-one !default;
+$primary:       $color-two !default;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -204,7 +204,7 @@ $container-max-widths: (
         sm: 540px,
         md: 720px,
         lg: 960px,
-        xl: 1140px
+        xl: 1200px
 ) !default;
 
 @include _assert-ascending($container-max-widths, "$container-max-widths");
