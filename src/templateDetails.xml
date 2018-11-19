@@ -2,13 +2,13 @@
 <!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.5/template-install.dtd">
 <extension version="3.0" type="template" method="upgrade" client="site">
 	<name>js_community</name>
-	<creationDate>May 23 2018</creationDate>
+	<creationDate>November 19 2018</creationDate>
 	<author>Joomlashack</author>
 	<authorEmail>support@joomlashack.com</authorEmail>
 	<authorUrl>http://www.joomlashack.com</authorUrl>
 	<copyright>Copyright Joomlashack 2010 - 2018. All rights reserved</copyright>
 	<license>GNU GPLv2</license>
-	<version>4.2.12</version>
+	<version>4.2.13</version>
     <description>TPL_JS_COMMUNITY_XML_DESCRIPTION</description>
 
 	<languages folder="language">
@@ -64,7 +64,6 @@
 		<fields name="params" addfieldpath="/templates/js_community/wright/parameters/joomla_3.0">
 			<fieldset name="basic">
                 <!-- Start of default Wright params -->
-				<field name="wright" type="wright"/>
 				<field name="rebrand" type="radio" class="btn-group btn-group-yesno" default="0" label="TPL_JS_WRIGHT_FIELD_REMOVE_BRANDING_LABEL" description="TPL_JS_WRIGHT_FIELD_REMOVE_BRANDING_DESC">
 				    <option value="1">JYES</option>
 				    <option value="0">JNO</option>
