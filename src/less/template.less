@@ -494,7 +494,7 @@ dl.article-info {
 
 .moduletable,
 .module {
-	
+
 	&-box {
 		padding: 40px;
 		background: @white;
@@ -552,6 +552,20 @@ dl.article-info {
 	&-box-transparent {
 		padding: 40px;
 		border: 1px solid transparent;
+	}
+}
+
+#grid-top,
+#grid-top2,
+#grid-bottom,
+#grid-bottom2 {
+
+	@media (min-width: 768px) {
+		
+		[class*="module"],
+		[class*="moduletable"] {
+			margin-bottom: 0;
+		}
 	}
 }
 
