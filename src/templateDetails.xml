@@ -70,9 +70,9 @@
 				    <option value="0">JNO</option>
  				</field>
 				<field name="style" type="styles" default="blue" label="TPL_JS_WRIGHT_FIELD_STYLE_LABEL" description="TPL_JS_WRIGHT_FIELD_STYLE_DESC" />
-				<field name="color_one" type="color" default="#1e5d74" label="TPL_JS_WRIGHT_FIELD_STYLE_COLOR_ONE_LABEL" description="TPL_JS_WRIGHT_FIELD_STYLE_COLOR_ONE_DESC" showon="style:custom" />
-				<field name="color_two" type="color" default="#1598c4" label="TPL_JS_WRIGHT_FIELD_STYLE_COLOR_TWO_LABEL" description="TPL_JS_WRIGHT_FIELD_STYLE_COLOR_TWO_DESC" showon="style:custom" />
-				<field name="color_three" type="color" default="#15C69A" label="TPL_JS_WRIGHT_FIELD_STYLE_COLOR_THREE_LABEL" description="TPL_JS_WRIGHT_FIELD_STYLE_COLOR_THREE_DESC" showon="style:custom" />
+				<field name="color_one" type="color" default="#1e5d74" class="wCustomColor" label="TPL_JS_WRIGHT_FIELD_STYLE_COLOR_ONE_LABEL" description="TPL_JS_WRIGHT_FIELD_STYLE_COLOR_ONE_DESC" showon="style:custom" />
+				<field name="color_two" type="color" default="#1598c4" class="wCustomColor" label="TPL_JS_WRIGHT_FIELD_STYLE_COLOR_TWO_LABEL" description="TPL_JS_WRIGHT_FIELD_STYLE_COLOR_TWO_DESC" showon="style:custom" />
+				<field name="color_three" type="color" default="#15C69A" class="wCustomColor" label="TPL_JS_WRIGHT_FIELD_STYLE_COLOR_THREE_LABEL" description="TPL_JS_WRIGHT_FIELD_STYLE_COLOR_THREE_DESC" showon="style:custom" />
 				<field name="compileCss" type="compilecss" showon="style:custom"/>
 				<field name="modal" type="radio" class="btn-group btn-group-yesno" default="1" label="TPL_JS_WRIGHT_FIELD_ENABLE_MODAL_LABEL" description="TPL_JS_WRIGHT_FIELD_ENABLE_MODAL_DESC">
 					<option value="1">JYES</option>
