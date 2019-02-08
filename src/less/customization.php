@@ -22,10 +22,7 @@ $lessCustomizationVars = array (
     '@color_three'  => $document->params->get('color_three', '#15C69A')
 );
 
-// Set the default template style. This is defined on templateDetails.xml as default value for 'style' field
-$style = 'blue';
-
 // Run the compiler
 require_once dirname(__FILE__) . '/../wright/build/less/compiler.php';
 $build = new WrightLessCompiler;
-$build->start($style, $lessCustomizationVars);
+$build->start('custom', $lessCustomizationVars);
