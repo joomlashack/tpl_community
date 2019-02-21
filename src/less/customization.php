@@ -14,6 +14,7 @@ defined('_JEXEC') or die('Restricted access');
 // Access template parameters
 $document = JFactory::getDocument();
 
+// Don't modify this file!
 // Set your variables overrides for variables-something.less.
 // These variables overrides are defined on templateDetails.xml below 'style' field
 $lessCustomizationVars = array (
@@ -22,7 +23,7 @@ $lessCustomizationVars = array (
     '@color_three'  => $document->params->get('color_three', '#15C69A')
 );
 
-// Run the compiler
+// Run the compiler - 'blue' is the default style
 require_once dirname(__FILE__) . '/../wright/build/less/compiler.php';
 $build = new WrightLessCompiler;
-$build->start('custom', $lessCustomizationVars);
+$build->start('blue', $lessCustomizationVars);
