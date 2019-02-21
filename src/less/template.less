@@ -129,6 +129,23 @@ input[type="color"],
 	.navbar-inner {
 		border: none;
 	}
+
+	.custom {
+		color: @white;
+		margin: 20px 0;
+
+		@media (max-width:979px) {
+			padding: 0 20px;
+			margin: 0 0 20px 20px;
+		}
+
+		p {
+
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+		}
+	}
 }
 
 /* Main Menu
@@ -561,7 +578,7 @@ dl.article-info {
 #grid-bottom2 {
 
 	@media (min-width: 768px) {
-		
+
 		[class*="module"],
 		[class*="moduletable"] {
 			margin-bottom: 0;
