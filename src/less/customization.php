@@ -18,7 +18,6 @@ $document = JFactory::getDocument();
 // Set your variables overrides for variables-something.less.
 // These variables overrides are defined on templateDetails.xml below 'style' field
 $lessCustomizationVars = array (
-    '@color_one'    => $document->params->get('color_one', '#1e5d74'),
     '@color_two'    => $document->params->get('color_two', '#1598c4'),
     '@color_three'  => $document->params->get('color_three', '#15C69A')
 );
