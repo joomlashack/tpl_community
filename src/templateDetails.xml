@@ -65,25 +65,28 @@
         <fields name="params" addfieldpath="/templates/js_community/wright/parameters/joomla_4.0">
             <fieldset name="basic">
                 <!-- Start of default Wright params -->
-                <field name="rebrand" type="radio" class="switcher" default="0" label="TPL_JS_WRIGHT_FIELD_REMOVE_BRANDING_LABEL" description="TPL_JS_WRIGHT_FIELD_REMOVE_BRANDING_DESC">
+                <field name="rebrand" type="wright.radio" class="switcher" default="0" label="TPL_JS_WRIGHT_FIELD_REMOVE_BRANDING_LABEL" description="TPL_JS_WRIGHT_FIELD_REMOVE_BRANDING_DESC">
                     <option value="0">JNO</option>
                     <option value="1">JYES</option>
                 </field>
-                <field name="style" type="styles" default="blue" label="TPL_JS_WRIGHT_FIELD_STYLE_LABEL" description="TPL_JS_WRIGHT_FIELD_STYLE_DESC" />
-                <field name="modal" type="radio" class="switcher" default="1" label="TPL_JS_WRIGHT_FIELD_ENABLE_MODAL_LABEL" description="TPL_JS_WRIGHT_FIELD_ENABLE_MODAL_DESC">
+                <field name="style" type="wright.styles" default="generic" label="TPL_JS_WRIGHT_FIELD_STYLE_LABEL" description="TPL_JS_WRIGHT_FIELD_STYLE_DESC" />
+                <field name="color_two" type="color" default="#1598c4" class="wCustomColor" label="TPL_JS_WRIGHT_FIELD_STYLE_COLOR_TWO_LABEL" description="TPL_JS_WRIGHT_FIELD_STYLE_COLOR_TWO_DESC" showon="style:custom" />
+                <field name="color_three" type="color" default="#15C69A" class="wCustomColor" label="TPL_JS_WRIGHT_FIELD_STYLE_COLOR_THREE_LABEL" description="TPL_JS_WRIGHT_FIELD_STYLE_COLOR_THREE_DESC" showon="style:custom" />
+                <field name="compileCss" type="wright.compilecss" showon="style:custom"/>
+                <field name="modal" type="wright.radio" class="switcher" default="1" label="TPL_JS_WRIGHT_FIELD_ENABLE_MODAL_LABEL" description="TPL_JS_WRIGHT_FIELD_ENABLE_MODAL_DESC">
                     <option value="0">JNO</option>
                     <option value="1">JYES</option>
                 </field>
-                <field name="javascriptBottom" type="radio" class="switcher" default="1" label="TPL_JS_WRIGHT_FIELD_JAVASCRIPT_BOTTOM" description="TPL_JS_WRIGHT_FIELD_JAVASCRIPT_BOTTOM_DESC">
+                <field name="javascriptBottom" type="wright.radio" class="switcher" default="1" label="TPL_JS_WRIGHT_FIELD_JAVASCRIPT_BOTTOM" description="TPL_JS_WRIGHT_FIELD_JAVASCRIPT_BOTTOM_DESC">
                     <option value="0">JNO</option>
                     <option value="1">JYES</option>
                 </field>
-                <field name="logo" type="logo" default="template" label="TPL_JS_WRIGHT_FIELD_LOGO_IMAGE_LABEL" description="TPL_JS_WRIGHT_FIELD_LOGO_IMAGE_DESC" />
-                <field name="logowidth" type="grid" default="4" label="TPL_JS_WRIGHT_FIELD_LOGO_WIDTH_LABEL" description="TPL_JS_WRIGHT_FIELD_LOGO_WIDTH_DESC" />
-                <field name="body_font" type="typography" default="default" label="TPL_JS_WRIGHT_FIELD_BODY_FONT_LABEL" description="TPL_JS_WRIGHT_FIELD_BODY_FONT_DESC" />
-                <field name="header_font" type="typography" default="default" label="TPL_JS_WRIGHT_FIELD_HEADING_FONT_LABEL" description="TPL_JS_WRIGHT_FIELD_HEADING_FONT_DESC" />
-                <field name="columns" type="columns" default="sidebar1:3;main:6;sidebar2:3" sidebars="2" label="TPL_JS_WRIGHT_FIELD_COLUMNS_LABEL" description="TPL_JS_WRIGHT_FIELD_COLUMNS_DESC" />
-                <field name="documentationMode" type="radio" class="switcher" default="0" label="TPL_JS_WRIGHT_DOCUMENTATION_MODE" description="TPL_JS_WRIGHT_DOCUMENTATION_MODE_DESC">
+                <field name="logo" type="wright.logo" default="template" label="TPL_JS_WRIGHT_FIELD_LOGO_IMAGE_LABEL" description="TPL_JS_WRIGHT_FIELD_LOGO_IMAGE_DESC" />
+                <field name="logowidth" type="wright.grid" default="4" label="TPL_JS_WRIGHT_FIELD_LOGO_WIDTH_LABEL" description="TPL_JS_WRIGHT_FIELD_LOGO_WIDTH_DESC" />
+                <field name="body_font" type="wright.typography" default="default" label="TPL_JS_WRIGHT_FIELD_BODY_FONT_LABEL" description="TPL_JS_WRIGHT_FIELD_BODY_FONT_DESC" />
+                <field name="header_font" type="wright.typography" default="default" label="TPL_JS_WRIGHT_FIELD_HEADING_FONT_LABEL" description="TPL_JS_WRIGHT_FIELD_HEADING_FONT_DESC" />
+                <field name="columns" type="wright.columns" default="sidebar1:3;main:6;sidebar2:3" sidebars="2" label="TPL_JS_WRIGHT_FIELD_COLUMNS_LABEL" description="TPL_JS_WRIGHT_FIELD_COLUMNS_DESC" />
+                <field name="documentationMode" type="wright.radio" class="switcher" default="0" label="TPL_JS_WRIGHT_DOCUMENTATION_MODE" description="TPL_JS_WRIGHT_DOCUMENTATION_MODE_DESC">
                     <option value="0">JNO</option>
                     <option value="1">JYES</option>
                 </field>
@@ -92,19 +95,8 @@
                     <option value="row-fluid">TPL_JS_WRIGHT_FIELD_BOOTSTRAP_ROW_MODE_FLUID</option>
                     <option value="row">TPL_JS_WRIGHT_FIELD_BOOTSTRAP_ROW_MODE_DEFAULT</option>
                 </field>
-                <field name="responsive" type="radio" class="switcher" default="1" label="TPL_JS_WRIGHT_FIELD_ENABLE_RESPONSIVE" description="TPL_JS_WRIGHT_FIELD_ENABLE_RESPONSIVE_DESC">
-                    <option value="0">JNO</option>
-                    <option value="1">JYES</option>
-                </field>
-                <field name="stickyFooter" type="radio" class="switcher" default="1" label="TPL_JS_WRIGHT_FIELD_STICKY_FOOTER" description="TPL_JS_WRIGHT_FIELD_STICKY_FOOTER_DESC">
-                    <option value="0">JNO</option>
-                    <option value="1">JYES</option>
-                </field>
-                <field name="wright_bootstrap_images" type="list" class="" default="" label="TPL_JS_WRIGHT_BOOTSTRAP_IMAGES" description="TPL_JS_WRIGHT_BOOTSTRAP_IMAGES_DESC">
+                <field name="wright_bootstrap_images" type="wright.imagestyles" default="" label="TPL_JS_WRIGHT_BOOTSTRAP_IMAGES" description="TPL_JS_WRIGHT_BOOTSTRAP_IMAGES_DESC">
                     <option value="">TPL_JS_WRIGHT_NONE</option>
-                    <option value="img-rounded">TPL_JS_WRIGHT_BOOTSTRAP_IMAGES_ROUNDED</option>
-                    <option value="img-circle">TPL_JS_WRIGHT_BOOTSTRAP_IMAGES_CIRCLE</option>
-                    <option value="img-polaroid">TPL_JS_WRIGHT_BOOTSTRAP_IMAGES_POLAROID</option>
                 </field>
                 <field name="mobilemenuspacer" label="TPL_JS_WRIGHT_MOBILE_MENU_TITLE_label" description="TPL_JS_WRIGHT_MOBILE_MENU_TITLE_DESC" type="spacer" />
                 <field name="mobile_menu_text" type="text" default="" label="TPL_JS_WRIGHT_MOBILE_MENU_TEXT" description="TPL_JS_WRIGHT_MOBILE_MENU_TEXT_DESC" />
@@ -154,8 +146,10 @@
         </relatedExtensions>
 
         <include>AllediaFreeDefaultFiles</include>
-        <scss destination="css">
+        <!--scss destination="css" style="nested">
             <file>scss/joomla-blue.scss</file>
-        </scss>
+            <file>scss/frontediting.scss</file>
+            <file>scss/rtl-40.scss</file>
+        </scss-->
     </alledia>
 </extension>

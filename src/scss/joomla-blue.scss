@@ -2,8 +2,8 @@
  *
  * The order of these files matter!
 */
-
-@import "../wright/src/wright/build/scss/beforevars";
+@import "../wright/build/scss/_beforevars";
 @import "variables-blue";
-@import "../wright/src/wright/build/scss/aftervars";
-@import "template-blue";
+@import "../wright/build/scss/_aftervars";
+@import "template";
+@import "style-blue";
