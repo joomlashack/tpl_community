@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.5/template-install.dtd">
 <extension version="3.9" type="template" method="upgrade" client="site">
 	<name>js_community</name>
-	<creationDate>September 19 2019</creationDate>
+	<creationDate>January 30 2020</creationDate>
 	<author>Joomlashack</author>
 	<authorEmail>support@joomlashack.com</authorEmail>
 	<authorUrl>http://www.joomlashack.com</authorUrl>
-	<copyright>Copyright Joomlashack 2010 - 2019. All rights reserved</copyright>
+	<copyright>Copyright Joomlashack 2010 - 2020. All rights reserved</copyright>
 	<license>GNU GPLv2</license>
-	<version>4.3.13</version>
+	<version>5.0.0-dev</version>
 	<description>TPL_JS_COMMUNITY_XML_DESCRIPTION</description>
 
 	<languages folder="language">
