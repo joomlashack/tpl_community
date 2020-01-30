@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.5/template-install.dtd">
-<extension version="3.0" type="template" method="upgrade" client="site">
+<extension version="3.9" type="template" method="upgrade" client="site">
 	<name>js_community</name>
-	<creationDate>May 23 2018</creationDate>
+	<creationDate>September 19 2019</creationDate>
 	<author>Joomlashack</author>
 	<authorEmail>support@joomlashack.com</authorEmail>
 	<authorUrl>http://www.joomlashack.com</authorUrl>
-	<copyright>Copyright Joomlashack 2010 - 2018. All rights reserved</copyright>
+	<copyright>Copyright Joomlashack 2010 - 2019. All rights reserved</copyright>
 	<license>GNU GPLv2</license>
-	<version>4.2.6</version>
-    <description>TPL_JS_COMMUNITY_XML_DESCRIPTION</description>
+	<version>4.3.13</version>
+	<description>TPL_JS_COMMUNITY_XML_DESCRIPTION</description>
 
 	<languages folder="language">
 		<!-- en-GB -->
@@ -28,6 +28,7 @@
 		<filename>template.php</filename>
 		<filename>templateDetails.xml</filename>
 		<filename>template_thumbnail.png</filename>
+		<filename>render.php</filename>
 		<filename>wrighttemplate.php</filename>
 		<folder>css</folder>
 		<folder>html</folder>

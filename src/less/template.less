@@ -483,54 +483,96 @@ dl.article-info {
 [class*="module"],
 [class*="moduletable"] {
 
-	> h3 {
+	> h1,
+	> h2,
+	> h3,
+	> h4,
+	> h5 {
 		margin-top: 0;
 	}
 }
 
-.moduletable-box,
-.module-box {
-	padding: 40px;
-	background: @white;
-	border: 1px solid #f2f2f2;
-}
+.moduletable,
+.module {
 
-.moduletable-box-facebook,
-.module-box-facebook {
-	padding: 40px;
-	background: #365899;
-	border: 1px solid #365899;
-	color: @white;
-
-	.badge {
+	&-box {
+		padding: 40px;
 		background: @white;
-		color: #365899;
+		border: 1px solid #f2f2f2;
+	}
+
+	&-box-youtube {
+		padding: 40px;
+		background: #e22b35;
+		border: 1px solid #e22b35;
+		color: @white;
+
+		.badge {
+			background: @white;
+			color: #e22b35;
+		}
+	}
+
+	&-box-twitter {
+		padding: 40px;
+		background: #1da1f2;
+		border: 1px solid #1da1f2;
+		color: @white;
+
+		.badge {
+			background: @white;
+			color: #1da1f2;
+		}
+	}
+
+	&-box-facebook {
+		padding: 40px;
+		background: #365899;
+		border: 1px solid #365899;
+		color: @white;
+
+		.badge {
+			background: @white;
+			color: #365899;
+		}
+	}
+
+	&-box-template {
+		padding: 40px;
+		background: @color_one;
+		border: 1px solid @color_one;
+		color: @white;
+
+		.badge {
+			background: @white;
+			color: @color_one;
+		}
+	}
+
+	&-box-transparent {
+		padding: 40px;
+		border: 1px solid transparent;
 	}
 }
 
-.moduletable-box-twitter,
-.module-box-twitter {
-	padding: 40px;
-	background: #1da1f2;
-	border: 1px solid #1da1f2;
-	color: @white;
+#grid-top,
+#grid-top2,
+#grid-bottom,
+#grid-bottom2 {
 
-	.badge {
-		background: @white;
-		color: #1da1f2;
+	@media (min-width: 768px) {
+		
+		[class*="module"],
+		[class*="moduletable"] {
+			margin-bottom: 0;
+		}
 	}
-}
-
-.moduletable-box-transparent,
-.module-box-transparent {
-	padding: 40px;
-	border: 1px solid transparent;
 }
 
 /* Custom
  ========================================================================== */
 
-.icon-heart:before {
+.color-red {
 	color: #ff0000;
 }
 
